@@ -286,6 +286,12 @@ def ast_to_python(ast: ASTNode) -> str:
     else:
         raise NotImplementedError(f"AST node type {ast.type} not implemented")
 
+def tex_to_python(tex:str):
+    tokens = lexer(tex)
+    ast = parser(tokens)
+    py_code = ast_to_python(ast)
+    return py_code
+
 #test
 if __name__ == "__main__":
     tex = r"""\log(\frac{x}{0})"""

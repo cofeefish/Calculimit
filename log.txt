@@ -1,0 +1,1709 @@
+
+
+----- New Session -----
+2026-05-27 22:57:26,539 - INFO - Serving on http://0.0.0.0:8080;
+2026-05-27 23:11:04,868 - ERROR - Exception on / [GET];
+Traceback (most recent call last):
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\calculimit\main.py", line 24, in home_page
+    return render_template('home_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 66, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 100, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: home_page.html
+2026-05-27 23:12:34,477 - ERROR - Exception on / [GET];
+Traceback (most recent call last):
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\calculimit\main.py", line 24, in home_page
+    return render_template('home_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 66, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 100, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: home_page.html
+2026-05-27 23:12:35,099 - ERROR - Exception on / [GET];
+Traceback (most recent call last):
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\calculimit\main.py", line 24, in home_page
+    return render_template('home_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 66, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 100, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: home_page.html
+2026-05-27 23:12:35,450 - ERROR - Exception on / [GET];
+Traceback (most recent call last):
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\calculimit\main.py", line 24, in home_page
+    return render_template('home_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 66, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 100, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: home_page.html
+2026-05-27 23:12:35,795 - ERROR - Exception on / [GET];
+Traceback (most recent call last):
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\calculimit\main.py", line 24, in home_page
+    return render_template('home_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 66, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 100, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: home_page.html
+2026-05-27 23:12:35,990 - ERROR - Exception on / [GET];
+Traceback (most recent call last):
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\calculimit\main.py", line 24, in home_page
+    return render_template('home_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 66, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 100, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: home_page.html
+2026-05-27 23:12:43,705 - ERROR - Exception on / [GET];
+Traceback (most recent call last):
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\calculimit\main.py", line 24, in home_page
+    return render_template('home_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 66, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\programming\calculimit\env\Lib\site-packages\flask\templating.py", line 100, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: home_page.html
+
+
+----- New Session -----
+2026-05-27 23:13:30,234 - INFO - Serving on http://0.0.0.0:8080;
+
+
+----- New Session -----
+2026-05-27 23:15:47,009 - INFO - Serving on http://0.0.0.0:8080;
+
+
+----- New Session -----
+2026-05-27 23:20:59,087 - INFO - Serving on http://0.0.0.0:8080;
+
+
+----- New Session -----
+2026-05-27 23:31:57,063 - INFO - Serving on http://0.0.0.0:8080;
+
+
+----- New Session -----
+2026-05-27 23:35:39,369 - INFO - Serving on http://0.0.0.0:8080;
+
+
+----- New Session -----
+2026-05-27 23:38:36,810 - INFO - Serving on http://0.0.0.0:8080;
+
+
+----- New Session -----
+2026-05-27 23:41:33,474 - INFO - Serving on http://0.0.0.0:8080;
+
+
+----- New Session -----
+2026-05-27 23:42:04,804 - INFO - Serving on http://0.0.0.0:8080;
+
+
+----- New Session -----
+2026-05-27 23:44:30,690 - INFO - Serving on http://0.0.0.0:8080;
+
+
+----- New Session -----
+2026-05-27 23:49:29,566 - INFO - Serving on http://0.0.0.0:8080;
+
+
+----- New Session -----
+2026-05-27 23:50:41,049 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.67:8080;
+2026-05-27 23:50:41,049 - INFO - [33mPress CTRL+C to quit[0m;
+2026-05-27 23:50:41,054 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-27 23:50:41,233 - WARNING -  * Debugger is active!;
+2026-05-27 23:50:41,235 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-27 23:51:08,355 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-27 23:51:08,376 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-27 23:51:08,575 - WARNING -  * Debugger is active!;
+2026-05-27 23:51:08,579 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-27 23:51:10,700 - INFO - 127.0.0.1 - - [27/May/2026 23:51:10] "GET / HTTP/1.1" 200 -;
+2026-05-27 23:51:10,839 - INFO - 127.0.0.1 - - [27/May/2026 23:51:10] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-27 23:51:10,843 - INFO - 127.0.0.1 - - [27/May/2026 23:51:10] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-27 23:52:30,933 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-27 23:52:30,954 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-27 23:52:31,166 - WARNING -  * Debugger is active!;
+2026-05-27 23:52:31,168 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-27 23:52:34,045 - INFO - 127.0.0.1 - - [27/May/2026 23:52:34] "GET / HTTP/1.1" 200 -;
+2026-05-27 23:52:34,259 - INFO - 127.0.0.1 - - [27/May/2026 23:52:34] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-27 23:52:34,268 - INFO - 127.0.0.1 - - [27/May/2026 23:52:34] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-27 23:52:37,107 - INFO - 127.0.0.1 - - [27/May/2026 23:52:37] "GET /?fav_language=python HTTP/1.1" 200 -;
+2026-05-27 23:52:37,172 - INFO - 127.0.0.1 - - [27/May/2026 23:52:37] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-27 23:52:37,173 - INFO - 127.0.0.1 - - [27/May/2026 23:52:37] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-27 23:53:00,358 - INFO - 127.0.0.1 - - [27/May/2026 23:53:00] "GET /?fav_language=python HTTP/1.1" 200 -;
+2026-05-27 23:53:00,429 - INFO - 127.0.0.1 - - [27/May/2026 23:53:00] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-27 23:53:00,430 - INFO - 127.0.0.1 - - [27/May/2026 23:53:00] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-27 23:53:36,338 - INFO - 127.0.0.1 - - [27/May/2026 23:53:36] "GET /?method=python HTTP/1.1" 200 -;
+2026-05-27 23:53:36,416 - INFO - 127.0.0.1 - - [27/May/2026 23:53:36] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-27 23:53:36,416 - INFO - 127.0.0.1 - - [27/May/2026 23:53:36] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-27 23:53:43,526 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-27 23:53:43,548 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-27 23:53:43,765 - WARNING -  * Debugger is active!;
+2026-05-27 23:53:43,768 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-27 23:53:47,107 - INFO - 127.0.0.1 - - [27/May/2026 23:53:47] "GET /?method=python HTTP/1.1" 200 -;
+2026-05-27 23:53:47,319 - INFO - 127.0.0.1 - - [27/May/2026 23:53:47] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-27 23:53:47,325 - INFO - 127.0.0.1 - - [27/May/2026 23:53:47] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-27 23:54:17,624 - INFO - 127.0.0.1 - - [27/May/2026 23:54:17] "GET /?method=python HTTP/1.1" 200 -;
+2026-05-27 23:54:17,690 - INFO - 127.0.0.1 - - [27/May/2026 23:54:17] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-27 23:54:17,690 - INFO - 127.0.0.1 - - [27/May/2026 23:54:17] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-27 23:54:34,925 - INFO - 127.0.0.1 - - [27/May/2026 23:54:34] "POST /restart HTTP/1.1" 200 -;
+2026-05-27 23:54:47,678 - INFO - 127.0.0.1 - - [27/May/2026 23:54:47] "GET /?method=latex&expression=1/x HTTP/1.1" 200 -;
+2026-05-27 23:54:47,743 - INFO - 127.0.0.1 - - [27/May/2026 23:54:47] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-27 23:54:47,744 - INFO - 127.0.0.1 - - [27/May/2026 23:54:47] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-27 23:55:43,930 - INFO - 127.0.0.1 - - [27/May/2026 23:55:43] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-27 23:55:47,020 - INFO - 127.0.0.1 - - [27/May/2026 23:55:47] "GET / HTTP/1.1" 200 -;
+2026-05-27 23:55:47,083 - INFO - 127.0.0.1 - - [27/May/2026 23:55:47] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-27 23:55:47,085 - INFO - 127.0.0.1 - - [27/May/2026 23:55:47] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:00:16,428 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:00:16,450 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:00:16,652 - WARNING -  * Debugger is active!;
+2026-05-28 00:00:16,654 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:00:18,674 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:00:18,694 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:00:18,918 - WARNING -  * Debugger is active!;
+2026-05-28 00:00:18,922 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:00:20,036 - INFO - 127.0.0.1 - - [28/May/2026 00:00:20] "GET / HTTP/1.1" 200 -;
+2026-05-28 00:00:20,168 - INFO - 127.0.0.1 - - [28/May/2026 00:00:20] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:00:20,169 - INFO - 127.0.0.1 - - [28/May/2026 00:00:20] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:00:23,269 - INFO - 127.0.0.1 - - [28/May/2026 00:00:23] "[35m[1mGET /?method=python&expression=1/x HTTP/1.1[0m" 500 -;
+2026-05-28 00:00:23,370 - INFO - 127.0.0.1 - - [28/May/2026 00:00:23] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -;
+2026-05-28 00:00:23,380 - INFO - 127.0.0.1 - - [28/May/2026 00:00:23] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -;
+2026-05-28 00:00:23,460 - INFO - 127.0.0.1 - - [28/May/2026 00:00:23] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -;
+2026-05-28 00:00:35,734 - INFO - 127.0.0.1 - - [28/May/2026 00:00:35] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:00:37,972 - INFO - 127.0.0.1 - - [28/May/2026 00:00:37] "[35m[1mGET /?method=python&expression=1/var HTTP/1.1[0m" 500 -;
+2026-05-28 00:00:38,048 - INFO - 127.0.0.1 - - [28/May/2026 00:00:38] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:00:38,049 - INFO - 127.0.0.1 - - [28/May/2026 00:00:38] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:01:00,157 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:01:00,179 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:01:00,394 - WARNING -  * Debugger is active!;
+2026-05-28 00:01:00,396 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:03:31,864 - INFO - 127.0.0.1 - - [28/May/2026 00:03:31] "[35m[1mGET /?method=python&expression=1/var HTTP/1.1[0m" 500 -;
+2026-05-28 00:03:32,080 - INFO - 127.0.0.1 - - [28/May/2026 00:03:32] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:03:32,089 - INFO - 127.0.0.1 - - [28/May/2026 00:03:32] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:03:32,154 - INFO - 127.0.0.1 - - [28/May/2026 00:03:32] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -;
+2026-05-28 00:03:33,838 - INFO - 127.0.0.1 - - [28/May/2026 00:03:33] "GET / HTTP/1.1" 200 -;
+2026-05-28 00:03:33,900 - INFO - 127.0.0.1 - - [28/May/2026 00:03:33] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:03:33,901 - INFO - 127.0.0.1 - - [28/May/2026 00:03:33] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:04:14,340 - INFO - 127.0.0.1 - - [28/May/2026 00:04:14] "GET / HTTP/1.1" 200 -;
+2026-05-28 00:04:14,404 - INFO - 127.0.0.1 - - [28/May/2026 00:04:14] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:04:14,405 - INFO - 127.0.0.1 - - [28/May/2026 00:04:14] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:04:29,796 - INFO - 127.0.0.1 - - [28/May/2026 00:04:29] "[35m[1mGET /?method=python&expression=1/var&x_value=infinity HTTP/1.1[0m" 500 -;
+2026-05-28 00:04:29,875 - INFO - 127.0.0.1 - - [28/May/2026 00:04:29] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:04:29,876 - INFO - 127.0.0.1 - - [28/May/2026 00:04:29] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:05:10,658 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:05:10,685 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:05:10,912 - WARNING -  * Debugger is active!;
+2026-05-28 00:05:10,915 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:06:12,176 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:06:12,196 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:06:12,395 - WARNING -  * Debugger is active!;
+2026-05-28 00:06:12,399 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:08:51,063 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:08:51,086 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:08:51,290 - WARNING -  * Debugger is active!;
+2026-05-28 00:08:51,293 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:10:41,753 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:10:41,775 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:10:41,980 - WARNING -  * Debugger is active!;
+2026-05-28 00:10:41,983 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:10:43,178 - INFO - 127.0.0.1 - - [28/May/2026 00:10:43] "GET /?method=python&expression=1/var&x_value=infinity HTTP/1.1" 200 -;
+2026-05-28 00:10:43,308 - INFO - 127.0.0.1 - - [28/May/2026 00:10:43] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:10:43,308 - INFO - 127.0.0.1 - - [28/May/2026 00:10:43] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:10:49,101 - INFO - 127.0.0.1 - - [28/May/2026 00:10:49] "GET /?method=python&expression=1/var&x_value=infinity HTTP/1.1" 200 -;
+2026-05-28 00:10:49,164 - INFO - 127.0.0.1 - - [28/May/2026 00:10:49] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:10:49,166 - INFO - 127.0.0.1 - - [28/May/2026 00:10:49] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:11:28,202 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:11:28,225 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:11:28,426 - WARNING -  * Debugger is active!;
+2026-05-28 00:11:28,429 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:14:05,073 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:14:05,095 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:14:05,312 - WARNING -  * Debugger is active!;
+2026-05-28 00:14:05,314 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:15:48,927 - INFO - 127.0.0.1 - - [28/May/2026 00:15:48] "GET /?method=python&expression=1/var&x_value=infinity HTTP/1.1" 200 -;
+2026-05-28 00:15:49,179 - INFO - 127.0.0.1 - - [28/May/2026 00:15:49] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:15:49,187 - INFO - 127.0.0.1 - - [28/May/2026 00:15:49] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:15:56,550 - INFO - 127.0.0.1 - - [28/May/2026 00:15:56] "GET /?method=python&expression=1/var&x_value=infinity HTTP/1.1" 200 -;
+2026-05-28 00:15:56,612 - INFO - 127.0.0.1 - - [28/May/2026 00:15:56] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:15:56,631 - INFO - 127.0.0.1 - - [28/May/2026 00:15:56] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:16:18,904 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:16:18,925 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:16:19,130 - WARNING -  * Debugger is active!;
+2026-05-28 00:16:19,133 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:16:20,012 - INFO - 127.0.0.1 - - [28/May/2026 00:16:20] "GET /?method=python&expression=1/var&x_value=infinity HTTP/1.1" 200 -;
+2026-05-28 00:16:20,141 - INFO - 127.0.0.1 - - [28/May/2026 00:16:20] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:16:20,142 - INFO - 127.0.0.1 - - [28/May/2026 00:16:20] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+
+
+----- New Session -----
+2026-05-28 00:16:30,798 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.67:8080;
+2026-05-28 00:16:30,798 - INFO - [33mPress CTRL+C to quit[0m;
+2026-05-28 00:16:30,798 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:16:30,979 - WARNING -  * Debugger is active!;
+2026-05-28 00:16:30,983 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:16:33,958 - INFO - 127.0.0.1 - - [28/May/2026 00:16:33] "GET /?method=python&expression=1/var&x_value=infinity HTTP/1.1" 200 -;
+2026-05-28 00:16:34,182 - INFO - 127.0.0.1 - - [28/May/2026 00:16:34] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:16:34,187 - INFO - 127.0.0.1 - - [28/May/2026 00:16:34] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:16:37,251 - INFO - 127.0.0.1 - - [28/May/2026 00:16:37] "GET / HTTP/1.1" 200 -;
+2026-05-28 00:16:37,312 - INFO - 127.0.0.1 - - [28/May/2026 00:16:37] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:16:37,313 - INFO - 127.0.0.1 - - [28/May/2026 00:16:37] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:16:44,572 - INFO - 127.0.0.1 - - [28/May/2026 00:16:44] "GET /?method=python&expression=1/var&x_value=infinity HTTP/1.1" 200 -;
+2026-05-28 00:16:44,635 - INFO - 127.0.0.1 - - [28/May/2026 00:16:44] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:16:44,636 - INFO - 127.0.0.1 - - [28/May/2026 00:16:44] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:17:30,382 - INFO - 127.0.0.1 - - [28/May/2026 00:17:30] "GET /?method=python&expression=1/var&x_value=infinity HTTP/1.1" 200 -;
+2026-05-28 00:17:30,446 - INFO - 127.0.0.1 - - [28/May/2026 00:17:30] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:17:30,447 - INFO - 127.0.0.1 - - [28/May/2026 00:17:30] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:18:30,612 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:18:30,635 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:18:30,841 - WARNING -  * Debugger is active!;
+2026-05-28 00:18:30,844 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:18:31,724 - INFO - 127.0.0.1 - - [28/May/2026 00:18:31] "GET /?method=python&expression=1/var&x_value=infinity HTTP/1.1" 200 -;
+2026-05-28 00:18:31,855 - INFO - 127.0.0.1 - - [28/May/2026 00:18:31] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:18:31,855 - INFO - 127.0.0.1 - - [28/May/2026 00:18:31] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:18:58,969 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:18:58,993 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:18:59,199 - WARNING -  * Debugger is active!;
+2026-05-28 00:18:59,202 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:19:01,253 - INFO - 127.0.0.1 - - [28/May/2026 00:19:01] "GET /?method=python&expression=1/var&x_value=infinity HTTP/1.1" 200 -;
+2026-05-28 00:19:01,382 - INFO - 127.0.0.1 - - [28/May/2026 00:19:01] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:19:01,383 - INFO - 127.0.0.1 - - [28/May/2026 00:19:01] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:19:32,133 - INFO - 127.0.0.1 - - [28/May/2026 00:19:32] "GET /?method=python&expression=1/var&x_value=infinity HTTP/1.1" 200 -;
+2026-05-28 00:19:32,196 - INFO - 127.0.0.1 - - [28/May/2026 00:19:32] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:19:32,203 - INFO - 127.0.0.1 - - [28/May/2026 00:19:32] "GET /static/css/home_page.css HTTP/1.1" 200 -;
+2026-05-28 00:19:58,673 - INFO - 127.0.0.1 - - [28/May/2026 00:19:58] "GET /?method=python&expression=(var**2)/var&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:19:58,737 - INFO - 127.0.0.1 - - [28/May/2026 00:19:58] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:19:58,737 - INFO - 127.0.0.1 - - [28/May/2026 00:19:58] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:20:53,338 - INFO - 127.0.0.1 - - [28/May/2026 00:20:53] "GET /?method=python&expression=(var**2)/var&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:20:53,402 - INFO - 127.0.0.1 - - [28/May/2026 00:20:53] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:20:53,403 - INFO - 127.0.0.1 - - [28/May/2026 00:20:53] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:22:29,307 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:22:29,329 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:22:29,558 - WARNING -  * Debugger is active!;
+2026-05-28 00:22:29,561 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:22:43,626 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:22:43,647 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:22:43,845 - WARNING -  * Debugger is active!;
+2026-05-28 00:22:43,848 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:22:58,921 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:22:58,948 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:22:59,158 - WARNING -  * Debugger is active!;
+2026-05-28 00:22:59,161 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:22:59,786 - INFO - 127.0.0.1 - - [28/May/2026 00:22:59] "GET /?method=python&expression=(var**2)/var&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:22:59,923 - INFO - 127.0.0.1 - - [28/May/2026 00:22:59] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:22:59,925 - INFO - 127.0.0.1 - - [28/May/2026 00:22:59] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:23:17,242 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:23:17,263 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:23:17,480 - WARNING -  * Debugger is active!;
+2026-05-28 00:23:17,482 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:23:20,429 - INFO - 127.0.0.1 - - [28/May/2026 00:23:20] "GET /?method=python&expression=(var**2)/var&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:23:20,630 - INFO - 127.0.0.1 - - [28/May/2026 00:23:20] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:23:20,640 - INFO - 127.0.0.1 - - [28/May/2026 00:23:20] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:23:41,606 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:23:41,640 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:23:41,855 - WARNING -  * Debugger is active!;
+2026-05-28 00:23:41,858 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:23:42,105 - INFO - 127.0.0.1 - - [28/May/2026 00:23:42] "GET /?method=python&expression=(var**2)/var&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:23:42,235 - INFO - 127.0.0.1 - - [28/May/2026 00:23:42] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:23:42,236 - INFO - 127.0.0.1 - - [28/May/2026 00:23:42] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:24:22,058 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:24:22,098 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:24:22,315 - WARNING -  * Debugger is active!;
+2026-05-28 00:24:22,319 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:24:22,682 - INFO - 127.0.0.1 - - [28/May/2026 00:24:22] "GET /?method=python&expression=(var**2)/var&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:24:22,810 - INFO - 127.0.0.1 - - [28/May/2026 00:24:22] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:24:22,810 - INFO - 127.0.0.1 - - [28/May/2026 00:24:22] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:25:07,669 - INFO - 127.0.0.1 - - [28/May/2026 00:25:07] "GET /?method=python&expression=math.sqrt(var)&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:25:07,733 - INFO - 127.0.0.1 - - [28/May/2026 00:25:07] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:25:07,748 - INFO - 127.0.0.1 - - [28/May/2026 00:25:07] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:25:26,034 - INFO - 127.0.0.1 - - [28/May/2026 00:25:26] "GET /?method=python&expression=math.log(var)&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:25:26,095 - INFO - 127.0.0.1 - - [28/May/2026 00:25:26] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:25:26,096 - INFO - 127.0.0.1 - - [28/May/2026 00:25:26] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:26:39,968 - INFO - 127.0.0.1 - - [28/May/2026 00:26:39] "GET /?method=python&expression=math.log(var)&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:26:40,029 - INFO - 127.0.0.1 - - [28/May/2026 00:26:40] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:26:40,029 - INFO - 127.0.0.1 - - [28/May/2026 00:26:40] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:26:52,730 - INFO - 127.0.0.1 - - [28/May/2026 00:26:52] "GET /?method=python&expression=math.log(var)&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:26:52,797 - INFO - 127.0.0.1 - - [28/May/2026 00:26:52] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:26:52,797 - INFO - 127.0.0.1 - - [28/May/2026 00:26:52] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:27:18,187 - INFO - 127.0.0.1 - - [28/May/2026 00:27:18] "GET /?method=python&expression=math.log(var)&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:27:18,250 - INFO - 127.0.0.1 - - [28/May/2026 00:27:18] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:27:18,251 - INFO - 127.0.0.1 - - [28/May/2026 00:27:18] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:27:47,455 - INFO - 127.0.0.1 - - [28/May/2026 00:27:47] "GET /?method=python&expression=math.log(var)&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:27:47,523 - INFO - 127.0.0.1 - - [28/May/2026 00:27:47] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:27:47,543 - INFO - 127.0.0.1 - - [28/May/2026 00:27:47] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:28:25,232 - INFO - 127.0.0.1 - - [28/May/2026 00:28:25] "GET /?method=python&expression=math.log(var)&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:28:25,300 - INFO - 127.0.0.1 - - [28/May/2026 00:28:25] "GET /static/css/home_page.css HTTP/1.1" 200 -;
+2026-05-28 00:28:25,310 - INFO - 127.0.0.1 - - [28/May/2026 00:28:25] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:28:49,670 - INFO - 127.0.0.1 - - [28/May/2026 00:28:49] "GET /?method=python&expression=math.log(var)&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:28:49,734 - INFO - 127.0.0.1 - - [28/May/2026 00:28:49] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:28:49,735 - INFO - 127.0.0.1 - - [28/May/2026 00:28:49] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:29:32,850 - INFO - 127.0.0.1 - - [28/May/2026 00:29:32] "GET /?method=python&expression=math.log(var)&x_value= HTTP/1.1" 200 -;
+2026-05-28 00:29:32,908 - INFO - 127.0.0.1 - - [28/May/2026 00:29:32] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:29:32,916 - INFO - 127.0.0.1 - - [28/May/2026 00:29:32] "GET /static/css/home_page.css HTTP/1.1" 200 -;
+2026-05-28 00:29:38,441 - INFO - 127.0.0.1 - - [28/May/2026 00:29:38] "[35m[1mGET /?method=python&expression=&x_value=&test_points=398 HTTP/1.1[0m" 500 -;
+2026-05-28 00:29:38,526 - INFO - 127.0.0.1 - - [28/May/2026 00:29:38] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:29:38,543 - INFO - 127.0.0.1 - - [28/May/2026 00:29:38] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:29:38,611 - INFO - 127.0.0.1 - - [28/May/2026 00:29:38] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -;
+2026-05-28 00:29:43,301 - INFO - 127.0.0.1 - - [28/May/2026 00:29:43] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:29:50,212 - INFO - 127.0.0.1 - - [28/May/2026 00:29:50] "GET /?method=latex&expression=&x_value=&test_points=244 HTTP/1.1" 200 -;
+2026-05-28 00:31:42,446 - INFO - 127.0.0.1 - - [28/May/2026 00:31:42] "GET / HTTP/1.1" 200 -;
+2026-05-28 00:31:42,515 - INFO - 127.0.0.1 - - [28/May/2026 00:31:42] "GET /static/css/home_page.css HTTP/1.1" 200 -;
+2026-05-28 00:31:42,516 - INFO - 127.0.0.1 - - [28/May/2026 00:31:42] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 00:31:42,584 - INFO - 127.0.0.1 - - [28/May/2026 00:31:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -;
+2026-05-28 00:31:49,640 - INFO - 127.0.0.1 - - [28/May/2026 00:31:49] "[35m[1mGET /?method=python&expression=&x_value=&test_points=236 HTTP/1.1[0m" 500 -;
+2026-05-28 00:31:49,707 - INFO - 127.0.0.1 - - [28/May/2026 00:31:49] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -;
+2026-05-28 00:31:49,707 - INFO - 127.0.0.1 - - [28/May/2026 00:31:49] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -;
+2026-05-28 00:31:49,805 - INFO - 127.0.0.1 - - [28/May/2026 00:31:49] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -;
+2026-05-28 00:32:43,095 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:32:43,121 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:32:43,326 - WARNING -  * Debugger is active!;
+2026-05-28 00:32:43,328 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:33:42,580 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:33:42,601 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:33:42,811 - WARNING -  * Debugger is active!;
+2026-05-28 00:33:42,814 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:33:43,861 - INFO - 127.0.0.1 - - [28/May/2026 00:33:43] "GET /?method=python&expression=&x_value=&test_points=236 HTTP/1.1" 200 -;
+2026-05-28 00:33:43,990 - INFO - 127.0.0.1 - - [28/May/2026 00:33:43] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:33:43,991 - INFO - 127.0.0.1 - - [28/May/2026 00:33:43] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:33:56,535 - INFO - 127.0.0.1 - - [28/May/2026 00:33:56] "GET /?method=python&expression=math.log(var)&x_value=&test_points=100 HTTP/1.1" 200 -;
+2026-05-28 00:33:56,600 - INFO - 127.0.0.1 - - [28/May/2026 00:33:56] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:33:56,600 - INFO - 127.0.0.1 - - [28/May/2026 00:33:56] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:34:30,077 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:34:30,108 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:34:30,309 - WARNING -  * Debugger is active!;
+2026-05-28 00:34:30,312 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:34:30,324 - INFO - 127.0.0.1 - - [28/May/2026 00:34:30] "[35m[1mGET /?method=python&expression=math.log(var)&x_value=&test_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 00:34:30,458 - INFO - 127.0.0.1 - - [28/May/2026 00:34:30] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:34:30,459 - INFO - 127.0.0.1 - - [28/May/2026 00:34:30] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:36:12,826 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:36:12,848 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:36:13,051 - WARNING -  * Debugger is active!;
+2026-05-28 00:36:13,054 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:36:14,318 - INFO - 127.0.0.1 - - [28/May/2026 00:36:14] "GET /?method=python&expression=math.log(var)&x_value=&test_points=100 HTTP/1.1" 200 -;
+2026-05-28 00:36:14,435 - INFO - 127.0.0.1 - - [28/May/2026 00:36:14] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:36:14,449 - INFO - 127.0.0.1 - - [28/May/2026 00:36:14] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:36:25,128 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:36:25,165 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:36:25,390 - WARNING -  * Debugger is active!;
+2026-05-28 00:36:25,393 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:36:25,709 - INFO - 127.0.0.1 - - [28/May/2026 00:36:25] "GET /?method=python&expression=math.log(var)&x_value=&test_points=100 HTTP/1.1" 200 -;
+2026-05-28 00:36:25,821 - INFO - 127.0.0.1 - - [28/May/2026 00:36:25] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:36:25,839 - INFO - 127.0.0.1 - - [28/May/2026 00:36:25] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:39:15,203 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:39:15,226 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:39:15,453 - WARNING -  * Debugger is active!;
+2026-05-28 00:39:15,456 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:39:22,957 - INFO - 127.0.0.1 - - [28/May/2026 00:39:22] "GET /?method=python&expression=math.log(var)&x_value=&test_points=100 HTTP/1.1" 200 -;
+2026-05-28 00:39:23,180 - INFO - 127.0.0.1 - - [28/May/2026 00:39:23] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:39:23,195 - INFO - 127.0.0.1 - - [28/May/2026 00:39:23] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:39:35,859 - INFO - 127.0.0.1 - - [28/May/2026 00:39:35] "GET /?method=python&expression=math.log(var)&x_value=&test_points=339 HTTP/1.1" 200 -;
+2026-05-28 00:39:35,924 - INFO - 127.0.0.1 - - [28/May/2026 00:39:35] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:39:35,926 - INFO - 127.0.0.1 - - [28/May/2026 00:39:35] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:40:19,771 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:40:19,807 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:40:20,036 - WARNING -  * Debugger is active!;
+2026-05-28 00:40:20,038 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:40:20,507 - INFO - 127.0.0.1 - - [28/May/2026 00:40:20] "GET /?method=python&expression=math.log(var)&x_value=&test_points=339 HTTP/1.1" 200 -;
+2026-05-28 00:40:20,636 - INFO - 127.0.0.1 - - [28/May/2026 00:40:20] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:40:20,637 - INFO - 127.0.0.1 - - [28/May/2026 00:40:20] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:40:29,124 - INFO - 127.0.0.1 - - [28/May/2026 00:40:29] "GET /?method=python&expression=math.log(var)&x_value=&test_points=219 HTTP/1.1" 200 -;
+2026-05-28 00:40:29,190 - INFO - 127.0.0.1 - - [28/May/2026 00:40:29] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:40:29,191 - INFO - 127.0.0.1 - - [28/May/2026 00:40:29] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:40:40,148 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 00:40:40,169 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:40:40,363 - WARNING -  * Debugger is active!;
+2026-05-28 00:40:40,365 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:40:49,862 - INFO - 127.0.0.1 - - [28/May/2026 00:40:49] "GET /?method=python&expression=math.log(var)&x_value=&test_points=140 HTTP/1.1" 200 -;
+2026-05-28 00:40:50,062 - INFO - 127.0.0.1 - - [28/May/2026 00:40:50] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:40:50,064 - INFO - 127.0.0.1 - - [28/May/2026 00:40:50] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:41:39,546 - INFO - 127.0.0.1 - - [28/May/2026 00:41:39] "GET /?method=python&expression=math.log(var)&x_value=&test_points=140 HTTP/1.1" 200 -;
+2026-05-28 00:41:39,609 - INFO - 127.0.0.1 - - [28/May/2026 00:41:39] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:41:39,610 - INFO - 127.0.0.1 - - [28/May/2026 00:41:39] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:41:48,159 - INFO - 127.0.0.1 - - [28/May/2026 00:41:48] "GET /?method=python&expression=math.log(var)&x_value=&num_points=236 HTTP/1.1" 200 -;
+2026-05-28 00:41:48,229 - INFO - 127.0.0.1 - - [28/May/2026 00:41:48] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:41:48,229 - INFO - 127.0.0.1 - - [28/May/2026 00:41:48] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:42:56,348 - INFO - 127.0.0.1 - - [28/May/2026 00:42:56] "[35m[1mGET /?method=python&expression=1/x&x_value=8&num_points=513 HTTP/1.1[0m" 500 -;
+2026-05-28 00:42:56,451 - INFO - 127.0.0.1 - - [28/May/2026 00:42:56] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:42:56,452 - INFO - 127.0.0.1 - - [28/May/2026 00:42:56] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:43:07,736 - INFO - 127.0.0.1 - - [28/May/2026 00:43:07] "[35m[1mGET /?method=python&expression=1/var&x_value=8&num_points=513 HTTP/1.1[0m" 500 -;
+2026-05-28 00:43:07,795 - INFO - 127.0.0.1 - - [28/May/2026 00:43:07] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:43:07,795 - INFO - 127.0.0.1 - - [28/May/2026 00:43:07] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:45:06,590 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:45:06,630 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:45:06,850 - WARNING -  * Debugger is active!;
+2026-05-28 00:45:06,853 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:45:07,305 - INFO - 127.0.0.1 - - [28/May/2026 00:45:07] "[35m[1mGET /?method=python&expression=1/var&x_value=8&num_points=513 HTTP/1.1[0m" 500 -;
+2026-05-28 00:45:07,423 - INFO - 127.0.0.1 - - [28/May/2026 00:45:07] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:45:07,437 - INFO - 127.0.0.1 - - [28/May/2026 00:45:07] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:46:11,132 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:46:11,153 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:46:11,387 - WARNING -  * Debugger is active!;
+2026-05-28 00:46:11,390 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:46:12,307 - INFO - 127.0.0.1 - - [28/May/2026 00:46:12] "[35m[1mGET /?method=python&expression=1/var&x_value=8&num_points=513 HTTP/1.1[0m" 500 -;
+2026-05-28 00:46:12,436 - INFO - 127.0.0.1 - - [28/May/2026 00:46:12] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:46:12,437 - INFO - 127.0.0.1 - - [28/May/2026 00:46:12] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:46:52,614 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:46:52,642 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:46:52,858 - WARNING -  * Debugger is active!;
+2026-05-28 00:46:52,860 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:46:54,070 - INFO - 127.0.0.1 - - [28/May/2026 00:46:54] "[35m[1mGET /?method=python&expression=1/var&x_value=8&num_points=513 HTTP/1.1[0m" 500 -;
+2026-05-28 00:46:54,198 - INFO - 127.0.0.1 - - [28/May/2026 00:46:54] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:46:54,199 - INFO - 127.0.0.1 - - [28/May/2026 00:46:54] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:47:04,923 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:47:04,956 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:47:05,160 - WARNING -  * Debugger is active!;
+2026-05-28 00:47:05,163 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:47:05,178 - INFO - 127.0.0.1 - - [28/May/2026 00:47:05] "[35m[1mGET /?method=python&expression=1/var&x_value=8&num_points=513 HTTP/1.1[0m" 500 -;
+2026-05-28 00:47:05,313 - INFO - 127.0.0.1 - - [28/May/2026 00:47:05] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:47:05,313 - INFO - 127.0.0.1 - - [28/May/2026 00:47:05] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:48:06,420 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:48:06,442 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:48:06,661 - WARNING -  * Debugger is active!;
+2026-05-28 00:48:06,664 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:48:07,431 - INFO - 127.0.0.1 - - [28/May/2026 00:48:07] "GET /?method=python&expression=1/var&x_value=8&num_points=513 HTTP/1.1" 200 -;
+2026-05-28 00:48:07,555 - INFO - 127.0.0.1 - - [28/May/2026 00:48:07] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:48:07,555 - INFO - 127.0.0.1 - - [28/May/2026 00:48:07] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:50:57,380 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:50:57,415 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:50:57,639 - WARNING -  * Debugger is active!;
+2026-05-28 00:50:57,643 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:51:01,713 - INFO - 127.0.0.1 - - [28/May/2026 00:51:01] "[35m[1mGET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 00:51:01,951 - INFO - 127.0.0.1 - - [28/May/2026 00:51:01] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:51:01,957 - INFO - 127.0.0.1 - - [28/May/2026 00:51:01] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:51:18,752 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:51:18,784 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:51:19,001 - WARNING -  * Debugger is active!;
+2026-05-28 00:51:19,004 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:51:19,145 - INFO - 127.0.0.1 - - [28/May/2026 00:51:19] "[35m[1mGET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 00:51:19,272 - INFO - 127.0.0.1 - - [28/May/2026 00:51:19] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:51:19,273 - INFO - 127.0.0.1 - - [28/May/2026 00:51:19] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:51:33,075 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:51:33,097 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:51:33,323 - WARNING -  * Debugger is active!;
+2026-05-28 00:51:33,326 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:51:34,121 - INFO - 127.0.0.1 - - [28/May/2026 00:51:34] "[35m[1mGET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 00:51:34,271 - INFO - 127.0.0.1 - - [28/May/2026 00:51:34] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:51:34,273 - INFO - 127.0.0.1 - - [28/May/2026 00:51:34] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:52:04,466 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:52:04,487 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:52:04,710 - WARNING -  * Debugger is active!;
+2026-05-28 00:52:04,712 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:52:06,830 - INFO - 127.0.0.1 - - [28/May/2026 00:52:06] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 00:52:06,942 - INFO - 127.0.0.1 - - [28/May/2026 00:52:06] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:52:06,959 - INFO - 127.0.0.1 - - [28/May/2026 00:52:06] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:52:39,919 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:52:39,941 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:52:40,158 - WARNING -  * Debugger is active!;
+2026-05-28 00:52:40,161 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:52:40,758 - INFO - 127.0.0.1 - - [28/May/2026 00:52:40] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 00:52:40,914 - INFO - 127.0.0.1 - - [28/May/2026 00:52:40] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:52:40,915 - INFO - 127.0.0.1 - - [28/May/2026 00:52:40] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:52:53,224 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:52:53,244 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:52:53,454 - WARNING -  * Debugger is active!;
+2026-05-28 00:52:53,457 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:52:54,440 - INFO - 127.0.0.1 - - [28/May/2026 00:52:54] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 00:52:54,575 - INFO - 127.0.0.1 - - [28/May/2026 00:52:54] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:52:54,576 - INFO - 127.0.0.1 - - [28/May/2026 00:52:54] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:53:39,657 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:53:39,680 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:55:18,026 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.67:8080;
+2026-05-28 00:55:18,026 - INFO - [33mPress CTRL+C to quit[0m;
+2026-05-28 00:55:18,027 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:55:18,209 - WARNING -  * Debugger is active!;
+2026-05-28 00:55:18,211 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:55:20,205 - INFO - 127.0.0.1 - - [28/May/2026 00:55:20] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 00:55:20,348 - INFO - 127.0.0.1 - - [28/May/2026 00:55:20] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:55:20,349 - INFO - 127.0.0.1 - - [28/May/2026 00:55:20] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:55:48,360 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:55:48,382 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:55:48,584 - WARNING -  * Debugger is active!;
+2026-05-28 00:55:48,588 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:55:50,236 - INFO - 127.0.0.1 - - [28/May/2026 00:55:50] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 00:55:50,377 - INFO - 127.0.0.1 - - [28/May/2026 00:55:50] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:55:50,377 - INFO - 127.0.0.1 - - [28/May/2026 00:55:50] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:56:22,738 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:56:22,760 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:56:22,975 - WARNING -  * Debugger is active!;
+2026-05-28 00:56:22,978 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:56:25,381 - INFO - 127.0.0.1 - - [28/May/2026 00:56:25] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 00:56:25,520 - INFO - 127.0.0.1 - - [28/May/2026 00:56:25] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:56:25,521 - INFO - 127.0.0.1 - - [28/May/2026 00:56:25] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:57:53,362 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:57:53,384 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:57:53,577 - WARNING -  * Debugger is active!;
+2026-05-28 00:57:53,580 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 00:57:58,202 - INFO - 127.0.0.1 - - [28/May/2026 00:57:58] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 00:57:58,421 - INFO - 127.0.0.1 - - [28/May/2026 00:57:58] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 00:57:58,426 - INFO - 127.0.0.1 - - [28/May/2026 00:57:58] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 00:59:22,968 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 00:59:22,991 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 00:59:23,215 - WARNING -  * Debugger is active!;
+2026-05-28 00:59:23,218 - INFO -  * Debugger PIN: 349-236-761;
+
+
+----- New Session -----
+2026-05-28 01:00:00,257 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.67:8080;
+2026-05-28 01:00:00,257 - INFO - [33mPress CTRL+C to quit[0m;
+2026-05-28 01:00:00,258 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:00:00,443 - WARNING -  * Debugger is active!;
+2026-05-28 01:00:00,446 - INFO -  * Debugger PIN: 349-236-761;
+
+
+----- New Session -----
+2026-05-28 01:00:24,958 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.67:8080;
+2026-05-28 01:00:24,958 - INFO - [33mPress CTRL+C to quit[0m;
+2026-05-28 01:00:24,958 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:00:25,162 - WARNING -  * Debugger is active!;
+2026-05-28 01:00:25,165 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:01:13,653 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+
+
+----- New Session -----
+2026-05-28 01:01:52,300 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.67:8080;
+2026-05-28 01:01:52,300 - INFO - [33mPress CTRL+C to quit[0m;
+2026-05-28 01:01:52,301 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:01:52,491 - WARNING -  * Debugger is active!;
+2026-05-28 01:01:52,495 - INFO -  * Debugger PIN: 349-236-761;
+
+
+----- New Session -----
+2026-05-28 01:02:33,485 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.67:8080;
+2026-05-28 01:02:33,485 - INFO - [33mPress CTRL+C to quit[0m;
+2026-05-28 01:02:33,486 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:02:33,680 - WARNING -  * Debugger is active!;
+2026-05-28 01:02:33,683 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:05:04,042 - INFO - 127.0.0.1 - - [28/May/2026 01:05:04] "[35m[1mGET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+
+
+----- New Session -----
+2026-05-28 01:06:51,051 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.67:8080;
+2026-05-28 01:06:51,051 - INFO - [33mPress CTRL+C to quit[0m;
+2026-05-28 01:06:51,052 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:06:51,251 - WARNING -  * Debugger is active!;
+2026-05-28 01:06:51,256 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:07:02,181 - INFO - 127.0.0.1 - - [28/May/2026 01:07:02] "GET /?method=python&expression=math.log(var)&x_value= HTTP/1.1" 200 -;
+2026-05-28 01:07:02,465 - INFO - 127.0.0.1 - - [28/May/2026 01:07:02] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:07:02,466 - INFO - 127.0.0.1 - - [28/May/2026 01:07:02] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:07:20,751 - INFO - 127.0.0.1 - - [28/May/2026 01:07:20] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:07:20,826 - INFO - 127.0.0.1 - - [28/May/2026 01:07:20] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:07:20,826 - INFO - 127.0.0.1 - - [28/May/2026 01:07:20] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:07:26,106 - INFO - 127.0.0.1 - - [28/May/2026 01:07:26] "GET /?method=python&expression=&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:07:26,180 - INFO - 127.0.0.1 - - [28/May/2026 01:07:26] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:07:26,184 - INFO - 127.0.0.1 - - [28/May/2026 01:07:26] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:07:30,866 - INFO - 127.0.0.1 - - [28/May/2026 01:07:30] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:07:30,947 - INFO - 127.0.0.1 - - [28/May/2026 01:07:30] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:07:30,952 - INFO - 127.0.0.1 - - [28/May/2026 01:07:30] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:08:12,660 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:08:12,685 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:08:12,900 - WARNING -  * Debugger is active!;
+2026-05-28 01:08:12,904 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:08:14,189 - INFO - 127.0.0.1 - - [28/May/2026 01:08:14] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:08:14,322 - INFO - 127.0.0.1 - - [28/May/2026 01:08:14] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:08:14,334 - INFO - 127.0.0.1 - - [28/May/2026 01:08:14] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:08:45,043 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:08:45,069 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:08:45,290 - WARNING -  * Debugger is active!;
+2026-05-28 01:08:45,293 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:08:45,999 - INFO - 127.0.0.1 - - [28/May/2026 01:08:45] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:08:46,139 - INFO - 127.0.0.1 - - [28/May/2026 01:08:46] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:08:46,140 - INFO - 127.0.0.1 - - [28/May/2026 01:08:46] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:08:57,352 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:08:57,389 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:08:57,611 - WARNING -  * Debugger is active!;
+2026-05-28 01:08:57,615 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:09:00,639 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:09:00,665 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:09:00,866 - WARNING -  * Debugger is active!;
+2026-05-28 01:09:00,870 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:09:00,904 - INFO - 127.0.0.1 - - [28/May/2026 01:09:00] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:09:01,036 - INFO - 127.0.0.1 - - [28/May/2026 01:09:01] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:09:01,036 - INFO - 127.0.0.1 - - [28/May/2026 01:09:01] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:09:12,707 - INFO - 127.0.0.1 - - [28/May/2026 01:09:12] "[35m[1mGET /?method=python&expression=math.log(var)&x_value=&num_points=1000 HTTP/1.1[0m" 500 -;
+2026-05-28 01:09:12,781 - INFO - 127.0.0.1 - - [28/May/2026 01:09:12] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -;
+2026-05-28 01:09:12,782 - INFO - 127.0.0.1 - - [28/May/2026 01:09:12] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -;
+2026-05-28 01:09:38,074 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:09:38,095 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:09:38,303 - WARNING -  * Debugger is active!;
+2026-05-28 01:09:38,307 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:09:38,437 - INFO - 127.0.0.1 - - [28/May/2026 01:09:38] "[35m[1mGET /?method=python&expression=math.log(var)&x_value=&num_points=1000 HTTP/1.1[0m" 500 -;
+2026-05-28 01:09:38,553 - INFO - 127.0.0.1 - - [28/May/2026 01:09:38] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:09:38,572 - INFO - 127.0.0.1 - - [28/May/2026 01:09:38] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:09:42,148 - INFO - 127.0.0.1 - - [28/May/2026 01:09:42] "GET /?method=python&expression=math.log(var)&x_value=&num_points=340 HTTP/1.1" 200 -;
+2026-05-28 01:09:42,225 - INFO - 127.0.0.1 - - [28/May/2026 01:09:42] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:09:42,226 - INFO - 127.0.0.1 - - [28/May/2026 01:09:42] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:09:44,796 - INFO - 127.0.0.1 - - [28/May/2026 01:09:44] "GET /?method=python&expression=&x_value=&num_points=189 HTTP/1.1" 200 -;
+2026-05-28 01:09:44,873 - INFO - 127.0.0.1 - - [28/May/2026 01:09:44] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:09:44,875 - INFO - 127.0.0.1 - - [28/May/2026 01:09:44] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:09:59,437 - INFO - 127.0.0.1 - - [28/May/2026 01:09:59] "GET /?method=python&expression=math.log(var)&x_value=&num_points=189 HTTP/1.1" 200 -;
+2026-05-28 01:09:59,512 - INFO - 127.0.0.1 - - [28/May/2026 01:09:59] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:09:59,513 - INFO - 127.0.0.1 - - [28/May/2026 01:09:59] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:11:14,358 - INFO - 127.0.0.1 - - [28/May/2026 01:11:14] "GET /?method=python&expression=math.log(var)&x_value=&num_points=9 HTTP/1.1" 200 -;
+2026-05-28 01:11:14,433 - INFO - 127.0.0.1 - - [28/May/2026 01:11:14] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:11:14,441 - INFO - 127.0.0.1 - - [28/May/2026 01:11:14] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:11:26,314 - INFO - 127.0.0.1 - - [28/May/2026 01:11:26] "GET /?method=python&expression=math.log(var)&x_value=&num_points=174 HTTP/1.1" 200 -;
+2026-05-28 01:11:26,389 - INFO - 127.0.0.1 - - [28/May/2026 01:11:26] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:11:26,389 - INFO - 127.0.0.1 - - [28/May/2026 01:11:26] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:11:34,975 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:11:34,996 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:11:35,211 - WARNING -  * Debugger is active!;
+2026-05-28 01:11:35,214 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:11:42,949 - INFO - 127.0.0.1 - - [28/May/2026 01:11:42] "GET /?method=python&expression=math.log(var)&x_value=&num_points=152 HTTP/1.1" 200 -;
+2026-05-28 01:11:43,148 - INFO - 127.0.0.1 - - [28/May/2026 01:11:43] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:11:43,157 - INFO - 127.0.0.1 - - [28/May/2026 01:11:43] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:15:29,177 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:15:29,201 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:15:37,565 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.67:8080;
+2026-05-28 01:15:37,565 - INFO - [33mPress CTRL+C to quit[0m;
+2026-05-28 01:15:37,566 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:15:37,750 - WARNING -  * Debugger is active!;
+2026-05-28 01:15:37,753 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:15:39,591 - INFO - 127.0.0.1 - - [28/May/2026 01:15:39] "GET /?method=python&expression=math.log(var)&x_value=&num_points=152 HTTP/1.1" 200 -;
+2026-05-28 01:15:39,737 - INFO - 127.0.0.1 - - [28/May/2026 01:15:39] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:15:39,737 - INFO - 127.0.0.1 - - [28/May/2026 01:15:39] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:15:48,726 - INFO - 127.0.0.1 - - [28/May/2026 01:15:48] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:15:48,800 - INFO - 127.0.0.1 - - [28/May/2026 01:15:48] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:15:48,804 - INFO - 127.0.0.1 - - [28/May/2026 01:15:48] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:16:40,052 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:16:40,075 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:16:40,289 - WARNING -  * Debugger is active!;
+2026-05-28 01:16:40,293 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:16:42,497 - INFO - 127.0.0.1 - - [28/May/2026 01:16:42] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:16:42,631 - INFO - 127.0.0.1 - - [28/May/2026 01:16:42] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:16:42,635 - INFO - 127.0.0.1 - - [28/May/2026 01:16:42] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:18:09,683 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:18:09,712 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:18:09,929 - WARNING -  * Debugger is active!;
+2026-05-28 01:18:09,932 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:18:10,302 - INFO - 127.0.0.1 - - [28/May/2026 01:18:10] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:18:10,442 - INFO - 127.0.0.1 - - [28/May/2026 01:18:10] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:18:10,444 - INFO - 127.0.0.1 - - [28/May/2026 01:18:10] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:19:01,170 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:19:01,194 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:19:01,408 - WARNING -  * Debugger is active!;
+2026-05-28 01:19:01,412 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:19:03,171 - INFO - 127.0.0.1 - - [28/May/2026 01:19:03] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:19:03,305 - INFO - 127.0.0.1 - - [28/May/2026 01:19:03] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:19:03,308 - INFO - 127.0.0.1 - - [28/May/2026 01:19:03] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:19:46,614 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:19:46,646 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:19:46,866 - WARNING -  * Debugger is active!;
+2026-05-28 01:19:46,869 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:19:47,553 - INFO - 127.0.0.1 - - [28/May/2026 01:19:47] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:19:47,688 - INFO - 127.0.0.1 - - [28/May/2026 01:19:47] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:19:47,692 - INFO - 127.0.0.1 - - [28/May/2026 01:19:47] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:22:08,682 - INFO - 127.0.0.1 - - [28/May/2026 01:22:08] "GET / HTTP/1.1" 200 -;
+2026-05-28 01:22:08,756 - INFO - 127.0.0.1 - - [28/May/2026 01:22:08] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:22:08,756 - INFO - 127.0.0.1 - - [28/May/2026 01:22:08] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:22:21,457 - INFO - 127.0.0.1 - - [28/May/2026 01:22:21] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:22:21,536 - INFO - 127.0.0.1 - - [28/May/2026 01:22:21] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:22:21,540 - INFO - 127.0.0.1 - - [28/May/2026 01:22:21] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:22:33,814 - INFO - 127.0.0.1 - - [28/May/2026 01:22:33] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:22:33,893 - INFO - 127.0.0.1 - - [28/May/2026 01:22:33] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:22:33,893 - INFO - 127.0.0.1 - - [28/May/2026 01:22:33] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:22:49,862 - INFO - 127.0.0.1 - - [28/May/2026 01:22:49] "GET /?method=python&expression=1/(math.sqrt(var))&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:22:49,941 - INFO - 127.0.0.1 - - [28/May/2026 01:22:49] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:22:49,945 - INFO - 127.0.0.1 - - [28/May/2026 01:22:49] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:03,148 - INFO - 127.0.0.1 - - [28/May/2026 01:23:03] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:03,221 - INFO - 127.0.0.1 - - [28/May/2026 01:23:03] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:03,223 - INFO - 127.0.0.1 - - [28/May/2026 01:23:03] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:10,042 - INFO - 127.0.0.1 - - [28/May/2026 01:23:10] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:10,108 - INFO - 127.0.0.1 - - [28/May/2026 01:23:10] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:10,129 - INFO - 127.0.0.1 - - [28/May/2026 01:23:10] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:10,822 - INFO - 127.0.0.1 - - [28/May/2026 01:23:10] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:10,886 - INFO - 127.0.0.1 - - [28/May/2026 01:23:10] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:10,889 - INFO - 127.0.0.1 - - [28/May/2026 01:23:10] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:11,434 - INFO - 127.0.0.1 - - [28/May/2026 01:23:11] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:11,501 - INFO - 127.0.0.1 - - [28/May/2026 01:23:11] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:11,502 - INFO - 127.0.0.1 - - [28/May/2026 01:23:11] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:12,013 - INFO - 127.0.0.1 - - [28/May/2026 01:23:12] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:12,086 - INFO - 127.0.0.1 - - [28/May/2026 01:23:12] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:12,106 - INFO - 127.0.0.1 - - [28/May/2026 01:23:12] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:12,662 - INFO - 127.0.0.1 - - [28/May/2026 01:23:12] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:12,725 - INFO - 127.0.0.1 - - [28/May/2026 01:23:12] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:12,732 - INFO - 127.0.0.1 - - [28/May/2026 01:23:12] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:13,236 - INFO - 127.0.0.1 - - [28/May/2026 01:23:13] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:13,298 - INFO - 127.0.0.1 - - [28/May/2026 01:23:13] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:13,304 - INFO - 127.0.0.1 - - [28/May/2026 01:23:13] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:13,717 - INFO - 127.0.0.1 - - [28/May/2026 01:23:13] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:13,781 - INFO - 127.0.0.1 - - [28/May/2026 01:23:13] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:13,783 - INFO - 127.0.0.1 - - [28/May/2026 01:23:13] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:14,262 - INFO - 127.0.0.1 - - [28/May/2026 01:23:14] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:14,324 - INFO - 127.0.0.1 - - [28/May/2026 01:23:14] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:14,327 - INFO - 127.0.0.1 - - [28/May/2026 01:23:14] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:14,702 - INFO - 127.0.0.1 - - [28/May/2026 01:23:14] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:14,761 - INFO - 127.0.0.1 - - [28/May/2026 01:23:14] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:14,771 - INFO - 127.0.0.1 - - [28/May/2026 01:23:14] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:15,211 - INFO - 127.0.0.1 - - [28/May/2026 01:23:15] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:15,270 - INFO - 127.0.0.1 - - [28/May/2026 01:23:15] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:15,276 - INFO - 127.0.0.1 - - [28/May/2026 01:23:15] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:15,709 - INFO - 127.0.0.1 - - [28/May/2026 01:23:15] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:15,772 - INFO - 127.0.0.1 - - [28/May/2026 01:23:15] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:15,775 - INFO - 127.0.0.1 - - [28/May/2026 01:23:15] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:16,210 - INFO - 127.0.0.1 - - [28/May/2026 01:23:16] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:16,272 - INFO - 127.0.0.1 - - [28/May/2026 01:23:16] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:16,273 - INFO - 127.0.0.1 - - [28/May/2026 01:23:16] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:16,733 - INFO - 127.0.0.1 - - [28/May/2026 01:23:16] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:16,795 - INFO - 127.0.0.1 - - [28/May/2026 01:23:16] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:16,799 - INFO - 127.0.0.1 - - [28/May/2026 01:23:16] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:17,222 - INFO - 127.0.0.1 - - [28/May/2026 01:23:17] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:17,284 - INFO - 127.0.0.1 - - [28/May/2026 01:23:17] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:17,303 - INFO - 127.0.0.1 - - [28/May/2026 01:23:17] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:23,982 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:23:24,014 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:23:24,244 - WARNING -  * Debugger is active!;
+2026-05-28 01:23:24,247 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:23:31,696 - INFO - 127.0.0.1 - - [28/May/2026 01:23:31] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:31,889 - INFO - 127.0.0.1 - - [28/May/2026 01:23:31] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:31,894 - INFO - 127.0.0.1 - - [28/May/2026 01:23:31] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:41,437 - INFO - 127.0.0.1 - - [28/May/2026 01:23:41] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:23:41,505 - INFO - 127.0.0.1 - - [28/May/2026 01:23:41] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:23:41,507 - INFO - 127.0.0.1 - - [28/May/2026 01:23:41] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:26:15,992 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:26:16,014 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:26:16,216 - WARNING -  * Debugger is active!;
+2026-05-28 01:26:16,220 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:26:52,381 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:26:52,401 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:26:52,603 - WARNING -  * Debugger is active!;
+2026-05-28 01:26:52,607 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:26:53,622 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:26:53,643 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:26:53,850 - WARNING -  * Debugger is active!;
+2026-05-28 01:26:53,853 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:27:09,192 - INFO - 127.0.0.1 - - [28/May/2026 01:27:09] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:27:09,401 - INFO - 127.0.0.1 - - [28/May/2026 01:27:09] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:27:09,404 - INFO - 127.0.0.1 - - [28/May/2026 01:27:09] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:27:37,104 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:27:37,126 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:27:37,343 - WARNING -  * Debugger is active!;
+2026-05-28 01:27:37,347 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:27:38,165 - INFO - 127.0.0.1 - - [28/May/2026 01:27:38] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:27:38,301 - INFO - 127.0.0.1 - - [28/May/2026 01:27:38] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:27:38,301 - INFO - 127.0.0.1 - - [28/May/2026 01:27:38] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:28:56,594 - INFO - 127.0.0.1 - - [28/May/2026 01:28:56] "GET /?method=python&expression=math.pow(var,+1e-10)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:28:56,671 - INFO - 127.0.0.1 - - [28/May/2026 01:28:56] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:28:56,671 - INFO - 127.0.0.1 - - [28/May/2026 01:28:56] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:29:13,860 - INFO - 127.0.0.1 - - [28/May/2026 01:29:13] "GET /?method=python&expression=math.pow(var,+1e-4)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:29:13,932 - INFO - 127.0.0.1 - - [28/May/2026 01:29:13] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:29:13,933 - INFO - 127.0.0.1 - - [28/May/2026 01:29:13] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:31:58,627 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\compile_tex.py', reloading;
+2026-05-28 01:31:58,649 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:31:58,859 - WARNING -  * Debugger is active!;
+2026-05-28 01:31:58,863 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:32:39,039 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:32:39,074 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:32:39,305 - WARNING -  * Debugger is active!;
+2026-05-28 01:32:39,309 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:32:56,915 - INFO - 127.0.0.1 - - [28/May/2026 01:32:56] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:32:57,166 - INFO - 127.0.0.1 - - [28/May/2026 01:32:57] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:32:57,176 - INFO - 127.0.0.1 - - [28/May/2026 01:32:57] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:36:59,906 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:36:59,942 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:37:00,177 - WARNING -  * Debugger is active!;
+2026-05-28 01:37:00,181 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:37:00,700 - INFO - 127.0.0.1 - - [28/May/2026 01:37:00] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:37:00,856 - INFO - 127.0.0.1 - - [28/May/2026 01:37:00] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:37:00,857 - INFO - 127.0.0.1 - - [28/May/2026 01:37:00] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:17,072 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:38:17,094 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:38:17,314 - WARNING -  * Debugger is active!;
+2026-05-28 01:38:17,318 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:38:32,393 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:38:32,415 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:38:32,634 - WARNING -  * Debugger is active!;
+2026-05-28 01:38:32,638 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:38:33,844 - INFO - 127.0.0.1 - - [28/May/2026 01:38:33] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:33,983 - INFO - 127.0.0.1 - - [28/May/2026 01:38:33] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:33,984 - INFO - 127.0.0.1 - - [28/May/2026 01:38:33] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:35,721 - INFO - 127.0.0.1 - - [28/May/2026 01:38:35] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:35,788 - INFO - 127.0.0.1 - - [28/May/2026 01:38:35] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:35,791 - INFO - 127.0.0.1 - - [28/May/2026 01:38:35] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:40,318 - INFO - 127.0.0.1 - - [28/May/2026 01:38:40] "[35m[1mGET /?method=python&expression=math.sin(x)&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 01:38:40,393 - INFO - 127.0.0.1 - - [28/May/2026 01:38:40] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -;
+2026-05-28 01:38:40,394 - INFO - 127.0.0.1 - - [28/May/2026 01:38:40] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -;
+2026-05-28 01:38:40,495 - INFO - 127.0.0.1 - - [28/May/2026 01:38:40] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -;
+2026-05-28 01:38:44,383 - INFO - 127.0.0.1 - - [28/May/2026 01:38:44] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:44,462 - INFO - 127.0.0.1 - - [28/May/2026 01:38:44] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:44,466 - INFO - 127.0.0.1 - - [28/May/2026 01:38:44] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:48,594 - INFO - 127.0.0.1 - - [28/May/2026 01:38:48] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:48,660 - INFO - 127.0.0.1 - - [28/May/2026 01:38:48] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:48,681 - INFO - 127.0.0.1 - - [28/May/2026 01:38:48] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:49,515 - INFO - 127.0.0.1 - - [28/May/2026 01:38:49] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:49,577 - INFO - 127.0.0.1 - - [28/May/2026 01:38:49] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:49,589 - INFO - 127.0.0.1 - - [28/May/2026 01:38:49] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:50,736 - INFO - 127.0.0.1 - - [28/May/2026 01:38:50] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:50,801 - INFO - 127.0.0.1 - - [28/May/2026 01:38:50] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:50,820 - INFO - 127.0.0.1 - - [28/May/2026 01:38:50] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:51,679 - INFO - 127.0.0.1 - - [28/May/2026 01:38:51] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:51,760 - INFO - 127.0.0.1 - - [28/May/2026 01:38:51] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:51,763 - INFO - 127.0.0.1 - - [28/May/2026 01:38:51] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:52,554 - INFO - 127.0.0.1 - - [28/May/2026 01:38:52] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:52,623 - INFO - 127.0.0.1 - - [28/May/2026 01:38:52] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:52,625 - INFO - 127.0.0.1 - - [28/May/2026 01:38:52] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:53,408 - INFO - 127.0.0.1 - - [28/May/2026 01:38:53] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:53,477 - INFO - 127.0.0.1 - - [28/May/2026 01:38:53] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:53,478 - INFO - 127.0.0.1 - - [28/May/2026 01:38:53] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:54,066 - INFO - 127.0.0.1 - - [28/May/2026 01:38:54] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:54,137 - INFO - 127.0.0.1 - - [28/May/2026 01:38:54] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:54,139 - INFO - 127.0.0.1 - - [28/May/2026 01:38:54] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:54,574 - INFO - 127.0.0.1 - - [28/May/2026 01:38:54] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:54,639 - INFO - 127.0.0.1 - - [28/May/2026 01:38:54] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:54,642 - INFO - 127.0.0.1 - - [28/May/2026 01:38:54] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:57,997 - INFO - 127.0.0.1 - - [28/May/2026 01:38:57] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:58,064 - INFO - 127.0.0.1 - - [28/May/2026 01:38:58] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:58,066 - INFO - 127.0.0.1 - - [28/May/2026 01:38:58] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:58,851 - INFO - 127.0.0.1 - - [28/May/2026 01:38:58] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:58,913 - INFO - 127.0.0.1 - - [28/May/2026 01:38:58] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:58,919 - INFO - 127.0.0.1 - - [28/May/2026 01:38:58] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:59,610 - INFO - 127.0.0.1 - - [28/May/2026 01:38:59] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:38:59,673 - INFO - 127.0.0.1 - - [28/May/2026 01:38:59] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:38:59,677 - INFO - 127.0.0.1 - - [28/May/2026 01:38:59] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:39:48,039 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 01:39:48,062 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:39:48,278 - WARNING -  * Debugger is active!;
+2026-05-28 01:39:48,282 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:41:22,084 - INFO - 127.0.0.1 - - [28/May/2026 01:41:22] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:41:22,305 - INFO - 127.0.0.1 - - [28/May/2026 01:41:22] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:41:22,327 - INFO - 127.0.0.1 - - [28/May/2026 01:41:22] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 01:45:02,595 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:45:02,618 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:45:02,845 - WARNING -  * Debugger is active!;
+2026-05-28 01:45:02,849 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:45:05,497 - INFO - 127.0.0.1 - - [28/May/2026 01:45:05] "[35m[1mGET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 01:45:05,640 - INFO - 127.0.0.1 - - [28/May/2026 01:45:05] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:45:05,640 - INFO - 127.0.0.1 - - [28/May/2026 01:45:05] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:46:31,223 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:46:31,245 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:46:31,455 - WARNING -  * Debugger is active!;
+2026-05-28 01:46:31,459 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:46:34,444 - INFO - 127.0.0.1 - - [28/May/2026 01:46:34] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:46:34,682 - INFO - 127.0.0.1 - - [28/May/2026 01:46:34] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:46:34,684 - INFO - 127.0.0.1 - - [28/May/2026 01:46:34] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:47:16,700 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:47:16,729 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:47:16,957 - WARNING -  * Debugger is active!;
+2026-05-28 01:47:16,960 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:47:17,753 - INFO - 127.0.0.1 - - [28/May/2026 01:47:17] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:47:17,894 - INFO - 127.0.0.1 - - [28/May/2026 01:47:17] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:47:17,896 - INFO - 127.0.0.1 - - [28/May/2026 01:47:17] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:47:53,202 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:47:53,238 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:47:53,456 - WARNING -  * Debugger is active!;
+2026-05-28 01:47:53,459 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:47:54,166 - INFO - 127.0.0.1 - - [28/May/2026 01:47:54] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:47:54,293 - INFO - 127.0.0.1 - - [28/May/2026 01:47:54] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:47:54,310 - INFO - 127.0.0.1 - - [28/May/2026 01:47:54] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:48:13,567 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:48:13,589 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:48:13,809 - WARNING -  * Debugger is active!;
+2026-05-28 01:48:13,813 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:48:14,752 - INFO - 127.0.0.1 - - [28/May/2026 01:48:14] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:48:14,870 - INFO - 127.0.0.1 - - [28/May/2026 01:48:14] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:48:14,889 - INFO - 127.0.0.1 - - [28/May/2026 01:48:14] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:49:31,245 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:49:31,281 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:49:31,487 - WARNING -  * Debugger is active!;
+2026-05-28 01:49:31,490 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:49:34,051 - INFO - 127.0.0.1 - - [28/May/2026 01:49:34] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:49:34,177 - INFO - 127.0.0.1 - - [28/May/2026 01:49:34] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:49:34,192 - INFO - 127.0.0.1 - - [28/May/2026 01:49:34] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:51:53,374 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:51:53,409 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:51:53,641 - WARNING -  * Debugger is active!;
+2026-05-28 01:51:53,645 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:51:54,012 - INFO - 127.0.0.1 - - [28/May/2026 01:51:54] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:51:54,158 - INFO - 127.0.0.1 - - [28/May/2026 01:51:54] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:51:54,159 - INFO - 127.0.0.1 - - [28/May/2026 01:51:54] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:52:43,974 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:52:44,001 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:52:44,222 - WARNING -  * Debugger is active!;
+2026-05-28 01:52:44,226 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:52:46,481 - INFO - 127.0.0.1 - - [28/May/2026 01:52:46] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:52:46,623 - INFO - 127.0.0.1 - - [28/May/2026 01:52:46] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:52:46,624 - INFO - 127.0.0.1 - - [28/May/2026 01:52:46] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:54:12,777 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:54:12,814 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:54:13,043 - WARNING -  * Debugger is active!;
+2026-05-28 01:54:13,046 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:54:13,655 - INFO - 127.0.0.1 - - [28/May/2026 01:54:13] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:54:13,793 - INFO - 127.0.0.1 - - [28/May/2026 01:54:13] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:54:13,797 - INFO - 127.0.0.1 - - [28/May/2026 01:54:13] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:54:43,485 - INFO - 127.0.0.1 - - [28/May/2026 01:54:43] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:54:43,559 - INFO - 127.0.0.1 - - [28/May/2026 01:54:43] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:54:43,559 - INFO - 127.0.0.1 - - [28/May/2026 01:54:43] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:55:44,071 - INFO - 127.0.0.1 - - [28/May/2026 01:55:44] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:55:44,158 - INFO - 127.0.0.1 - - [28/May/2026 01:55:44] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:55:44,158 - INFO - 127.0.0.1 - - [28/May/2026 01:55:44] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:56:04,534 - INFO - 127.0.0.1 - - [28/May/2026 01:56:04] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:56:04,601 - INFO - 127.0.0.1 - - [28/May/2026 01:56:04] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 01:56:04,602 - INFO - 127.0.0.1 - - [28/May/2026 01:56:04] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:59:37,544 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 01:59:37,572 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 01:59:37,807 - WARNING -  * Debugger is active!;
+2026-05-28 01:59:37,811 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 01:59:39,866 - INFO - 127.0.0.1 - - [28/May/2026 01:59:39] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 01:59:40,012 - INFO - 127.0.0.1 - - [28/May/2026 01:59:40] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 01:59:40,013 - INFO - 127.0.0.1 - - [28/May/2026 01:59:40] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 02:00:10,983 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 02:00:11,021 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 02:00:11,246 - WARNING -  * Debugger is active!;
+2026-05-28 02:00:11,249 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 02:00:11,627 - INFO - 127.0.0.1 - - [28/May/2026 02:00:11] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 02:00:11,763 - INFO - 127.0.0.1 - - [28/May/2026 02:00:11] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 02:00:11,765 - INFO - 127.0.0.1 - - [28/May/2026 02:00:11] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 02:01:15,201 - INFO - 127.0.0.1 - - [28/May/2026 02:01:15] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 02:01:15,270 - INFO - 127.0.0.1 - - [28/May/2026 02:01:15] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 02:01:15,271 - INFO - 127.0.0.1 - - [28/May/2026 02:01:15] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 02:02:51,119 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 02:02:51,158 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 02:02:51,378 - WARNING -  * Debugger is active!;
+2026-05-28 02:02:51,381 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 02:03:23,362 - INFO - 127.0.0.1 - - [28/May/2026 02:03:23] "GET /?method=python&expression=math.log(var)&x_value= HTTP/1.1" 200 -;
+2026-05-28 02:03:23,593 - INFO - 127.0.0.1 - - [28/May/2026 02:03:23] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 02:03:23,595 - INFO - 127.0.0.1 - - [28/May/2026 02:03:23] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 02:03:38,298 - INFO - 127.0.0.1 - - [28/May/2026 02:03:38] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 02:03:38,387 - INFO - 127.0.0.1 - - [28/May/2026 02:03:38] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 02:03:38,390 - INFO - 127.0.0.1 - - [28/May/2026 02:03:38] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 02:04:12,818 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 02:04:12,840 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 02:04:13,064 - WARNING -  * Debugger is active!;
+2026-05-28 02:04:13,067 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 02:04:16,377 - INFO - 127.0.0.1 - - [28/May/2026 02:04:16] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 02:04:16,620 - INFO - 127.0.0.1 - - [28/May/2026 02:04:16] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 02:04:16,622 - INFO - 127.0.0.1 - - [28/May/2026 02:04:16] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 02:05:03,295 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 02:05:03,329 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 02:05:03,558 - WARNING -  * Debugger is active!;
+2026-05-28 02:05:03,562 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 02:05:03,673 - INFO - 127.0.0.1 - - [28/May/2026 02:05:03] "GET /?method=python&expression=math.pow(var,+1e-2)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 02:05:03,806 - INFO - 127.0.0.1 - - [28/May/2026 02:05:03] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 02:05:03,811 - INFO - 127.0.0.1 - - [28/May/2026 02:05:03] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 15:24:34,428 - INFO - 127.0.0.1 - - [28/May/2026 15:24:34] "[35m[1mGET /?method=python&expression=print(var)&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 15:24:34,537 - INFO - 127.0.0.1 - - [28/May/2026 15:24:34] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -;
+2026-05-28 15:24:34,552 - INFO - 127.0.0.1 - - [28/May/2026 15:24:34] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -;
+2026-05-28 15:24:34,635 - INFO - 127.0.0.1 - - [28/May/2026 15:24:34] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -;
+2026-05-28 15:24:52,617 - INFO - 127.0.0.1 - - [28/May/2026 15:24:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -;
+2026-05-28 15:24:52,650 - INFO - 127.0.0.1 - - [28/May/2026 15:24:52] "GET /static/css/home_page.css HTTP/1.1" 200 -;
+2026-05-28 15:24:58,942 - INFO - 127.0.0.1 - - [28/May/2026 15:24:58] "[35m[1mGET /?method=python&expression=print("hi")&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 15:24:59,024 - INFO - 127.0.0.1 - - [28/May/2026 15:24:59] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 15:24:59,027 - INFO - 127.0.0.1 - - [28/May/2026 15:24:59] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 15:25:16,338 - INFO - 127.0.0.1 - - [28/May/2026 15:25:16] "[35m[1mGET /?method=python&expression=os.listdir('\\)&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 15:25:16,415 - INFO - 127.0.0.1 - - [28/May/2026 15:25:16] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 15:25:16,416 - INFO - 127.0.0.1 - - [28/May/2026 15:25:16] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 15:25:33,956 - INFO - 127.0.0.1 - - [28/May/2026 15:25:33] "[35m[1mGET /?method=python&expression=os.listdir(r'\\')&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 15:25:34,029 - INFO - 127.0.0.1 - - [28/May/2026 15:25:34] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 15:25:34,029 - INFO - 127.0.0.1 - - [28/May/2026 15:25:34] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 15:26:51,861 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 15:26:51,890 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 15:26:52,893 - WARNING -  * Debugger is active!;
+2026-05-28 15:26:52,898 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 15:26:56,799 - INFO - 127.0.0.1 - - [28/May/2026 15:26:56] "[35m[1mGET /?method=python&expression=import+os;+print(os.listdir("\\\\"))&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 15:26:57,025 - INFO - 127.0.0.1 - - [28/May/2026 15:26:57] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 15:26:57,031 - INFO - 127.0.0.1 - - [28/May/2026 15:26:57] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 15:29:34,643 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 15:29:34,667 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 15:29:34,898 - WARNING -  * Debugger is active!;
+2026-05-28 15:29:34,902 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 15:29:37,613 - INFO - 127.0.0.1 - - [28/May/2026 15:29:37] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 15:29:37,870 - INFO - 127.0.0.1 - - [28/May/2026 15:29:37] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 15:29:37,881 - INFO - 127.0.0.1 - - [28/May/2026 15:29:37] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 15:29:45,914 - INFO - 127.0.0.1 - - [28/May/2026 15:29:45] "GET /?method=python&expression=os.exit()&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 15:29:45,985 - INFO - 127.0.0.1 - - [28/May/2026 15:29:45] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 15:29:45,990 - INFO - 127.0.0.1 - - [28/May/2026 15:29:45] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 15:37:11,649 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 15:37:11,672 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 15:37:11,909 - WARNING -  * Debugger is active!;
+2026-05-28 15:37:11,914 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 15:45:28,345 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 15:45:28,366 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 15:45:28,578 - WARNING -  * Debugger is active!;
+2026-05-28 15:45:28,582 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 15:51:31,885 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\test_sum.py', reloading;
+2026-05-28 15:51:31,908 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 15:51:32,128 - WARNING -  * Debugger is active!;
+2026-05-28 15:51:32,132 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 16:00:15,840 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 16:00:15,863 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 16:00:16,065 - WARNING -  * Debugger is active!;
+2026-05-28 16:00:16,069 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 16:00:17,086 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 16:00:17,108 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 16:00:17,339 - WARNING -  * Debugger is active!;
+2026-05-28 16:00:17,342 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 16:07:29,901 - INFO - 127.0.0.1 - - [28/May/2026 16:07:29] "GET /?method=python&expression=exit()&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:07:30,116 - INFO - 127.0.0.1 - - [28/May/2026 16:07:30] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:07:30,118 - INFO - 127.0.0.1 - - [28/May/2026 16:07:30] "GET /static/css/home_page.css HTTP/1.1" 200 -;
+2026-05-28 16:07:30,219 - INFO - 127.0.0.1 - - [28/May/2026 16:07:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -;
+2026-05-28 16:10:16,063 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 16:10:16,085 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 16:11:22,003 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.67:8080;
+2026-05-28 16:11:22,003 - INFO - [33mPress CTRL+C to quit[0m;
+2026-05-28 16:11:22,004 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 16:11:22,187 - WARNING -  * Debugger is active!;
+2026-05-28 16:11:22,191 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 16:11:34,251 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 16:11:34,273 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 16:11:34,483 - WARNING -  * Debugger is active!;
+2026-05-28 16:11:34,486 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 16:11:36,081 - INFO - 127.0.0.1 - - [28/May/2026 16:11:36] "[35m[1mGET /?method=python&expression=math.sin(x)&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 16:11:36,234 - INFO - 127.0.0.1 - - [28/May/2026 16:11:36] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -;
+2026-05-28 16:11:36,235 - INFO - 127.0.0.1 - - [28/May/2026 16:11:36] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -;
+2026-05-28 16:11:36,304 - INFO - 127.0.0.1 - - [28/May/2026 16:11:36] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -;
+2026-05-28 16:11:42,464 - INFO - 127.0.0.1 - - [28/May/2026 16:11:42] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:11:42,531 - INFO - 127.0.0.1 - - [28/May/2026 16:11:42] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:11:42,539 - INFO - 127.0.0.1 - - [28/May/2026 16:11:42] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:12:07,624 - INFO - 127.0.0.1 - - [28/May/2026 16:12:07] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:12:07,696 - INFO - 127.0.0.1 - - [28/May/2026 16:12:07] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:12:07,696 - INFO - 127.0.0.1 - - [28/May/2026 16:12:07] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:12:35,838 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 16:12:35,864 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 16:12:36,076 - WARNING -  * Debugger is active!;
+2026-05-28 16:12:36,079 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 16:12:37,607 - INFO - 127.0.0.1 - - [28/May/2026 16:12:37] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:12:37,743 - INFO - 127.0.0.1 - - [28/May/2026 16:12:37] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:12:37,746 - INFO - 127.0.0.1 - - [28/May/2026 16:12:37] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:29:17,870 - INFO - 127.0.0.1 - - [28/May/2026 16:29:17] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:29:17,951 - INFO - 127.0.0.1 - - [28/May/2026 16:29:17] "GET /static/css/home_page.css HTTP/1.1" 200 -;
+2026-05-28 16:29:17,969 - INFO - 127.0.0.1 - - [28/May/2026 16:29:17] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:29:18,072 - INFO - 127.0.0.1 - - [28/May/2026 16:29:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -;
+2026-05-28 16:29:40,202 - INFO - 127.0.0.1 - - [28/May/2026 16:29:40] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:29:40,270 - INFO - 127.0.0.1 - - [28/May/2026 16:29:40] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:29:40,289 - INFO - 127.0.0.1 - - [28/May/2026 16:29:40] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:30:12,910 - INFO - 127.0.0.1 - - [28/May/2026 16:30:12] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:30:12,984 - INFO - 127.0.0.1 - - [28/May/2026 16:30:12] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:30:12,999 - INFO - 127.0.0.1 - - [28/May/2026 16:30:12] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:31:09,711 - INFO - 127.0.0.1 - - [28/May/2026 16:31:09] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:31:09,780 - INFO - 127.0.0.1 - - [28/May/2026 16:31:09] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:31:09,800 - INFO - 127.0.0.1 - - [28/May/2026 16:31:09] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:31:22,502 - INFO - 127.0.0.1 - - [28/May/2026 16:31:22] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:31:22,578 - INFO - 127.0.0.1 - - [28/May/2026 16:31:22] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:31:22,616 - INFO - 127.0.0.1 - - [28/May/2026 16:31:22] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:31:41,816 - INFO - 127.0.0.1 - - [28/May/2026 16:31:41] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:31:41,884 - INFO - 127.0.0.1 - - [28/May/2026 16:31:41] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:31:41,900 - INFO - 127.0.0.1 - - [28/May/2026 16:31:41] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:32:09,034 - INFO - 127.0.0.1 - - [28/May/2026 16:32:09] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:32:09,113 - INFO - 127.0.0.1 - - [28/May/2026 16:32:09] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:32:09,129 - INFO - 127.0.0.1 - - [28/May/2026 16:32:09] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:32:30,883 - INFO - 127.0.0.1 - - [28/May/2026 16:32:30] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:32:30,960 - INFO - 127.0.0.1 - - [28/May/2026 16:32:30] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:32:30,993 - INFO - 127.0.0.1 - - [28/May/2026 16:32:30] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:34:43,421 - INFO - 127.0.0.1 - - [28/May/2026 16:34:43] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:34:43,503 - INFO - 127.0.0.1 - - [28/May/2026 16:34:43] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:34:43,529 - INFO - 127.0.0.1 - - [28/May/2026 16:34:43] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:37:33,800 - INFO - 127.0.0.1 - - [28/May/2026 16:37:33] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:37:33,879 - INFO - 127.0.0.1 - - [28/May/2026 16:37:33] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:37:33,915 - INFO - 127.0.0.1 - - [28/May/2026 16:37:33] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:39:10,927 - INFO - 127.0.0.1 - - [28/May/2026 16:39:10] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:39:11,000 - INFO - 127.0.0.1 - - [28/May/2026 16:39:11] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:39:11,005 - INFO - 127.0.0.1 - - [28/May/2026 16:39:11] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:41:07,188 - INFO - 127.0.0.1 - - [28/May/2026 16:41:07] "GET /?method=python&expression=1/var&x_value=4&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:41:07,261 - INFO - 127.0.0.1 - - [28/May/2026 16:41:07] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:41:07,280 - INFO - 127.0.0.1 - - [28/May/2026 16:41:07] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:41:24,044 - INFO - 127.0.0.1 - - [28/May/2026 16:41:24] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:41:24,126 - INFO - 127.0.0.1 - - [28/May/2026 16:41:24] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:41:24,129 - INFO - 127.0.0.1 - - [28/May/2026 16:41:24] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:41:35,551 - INFO - 127.0.0.1 - - [28/May/2026 16:41:35] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:41:35,619 - INFO - 127.0.0.1 - - [28/May/2026 16:41:35] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:41:35,621 - INFO - 127.0.0.1 - - [28/May/2026 16:41:35] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:41:45,095 - INFO - 127.0.0.1 - - [28/May/2026 16:41:45] "GET /?method=python&expression=var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:41:45,159 - INFO - 127.0.0.1 - - [28/May/2026 16:41:45] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:41:45,166 - INFO - 127.0.0.1 - - [28/May/2026 16:41:45] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:41:56,049 - INFO - 127.0.0.1 - - [28/May/2026 16:41:56] "GET /?method=python&expression=var**2&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:41:56,112 - INFO - 127.0.0.1 - - [28/May/2026 16:41:56] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:41:56,122 - INFO - 127.0.0.1 - - [28/May/2026 16:41:56] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:42:08,179 - INFO - 127.0.0.1 - - [28/May/2026 16:42:08] "GET /?method=python&expression=math.exp(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:42:08,241 - INFO - 127.0.0.1 - - [28/May/2026 16:42:08] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:42:08,250 - INFO - 127.0.0.1 - - [28/May/2026 16:42:08] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:42:34,474 - INFO - 127.0.0.1 - - [28/May/2026 16:42:34] "GET /?method=python&expression=var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:42:34,564 - INFO - 127.0.0.1 - - [28/May/2026 16:42:34] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:42:34,564 - INFO - 127.0.0.1 - - [28/May/2026 16:42:34] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:42:55,318 - INFO - 127.0.0.1 - - [28/May/2026 16:42:55] "GET /?method=python&expression=math.exp(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:42:55,392 - INFO - 127.0.0.1 - - [28/May/2026 16:42:55] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:42:55,411 - INFO - 127.0.0.1 - - [28/May/2026 16:42:55] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:44:25,992 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 16:44:26,016 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 16:44:26,248 - WARNING -  * Debugger is active!;
+2026-05-28 16:44:26,252 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 16:45:02,420 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 16:45:02,444 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 16:45:02,664 - WARNING -  * Debugger is active!;
+2026-05-28 16:45:02,668 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 16:45:03,715 - INFO - 127.0.0.1 - - [28/May/2026 16:45:03] "GET /?method=python&expression=math.exp(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:45:03,858 - INFO - 127.0.0.1 - - [28/May/2026 16:45:03] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:45:03,858 - INFO - 127.0.0.1 - - [28/May/2026 16:45:03] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 16:48:35,644 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 16:48:35,668 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 16:48:35,898 - WARNING -  * Debugger is active!;
+2026-05-28 16:48:35,902 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 16:49:38,176 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-28 16:49:38,203 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 16:49:38,434 - WARNING -  * Debugger is active!;
+2026-05-28 16:49:38,437 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 16:49:57,538 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 16:49:57,581 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 16:49:57,808 - WARNING -  * Debugger is active!;
+2026-05-28 16:49:57,812 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 16:49:58,129 - INFO - 127.0.0.1 - - [28/May/2026 16:49:58] "GET /?method=python&expression=math.exp(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:49:58,251 - INFO - 127.0.0.1 - - [28/May/2026 16:49:58] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:49:58,311 - INFO - 127.0.0.1 - - [28/May/2026 16:49:58] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:50:03,889 - INFO - 127.0.0.1 - - [28/May/2026 16:50:03] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:50:03,965 - INFO - 127.0.0.1 - - [28/May/2026 16:50:03] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:50:04,030 - INFO - 127.0.0.1 - - [28/May/2026 16:50:04] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:50:28,014 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-28 16:50:28,040 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-28 16:50:28,284 - WARNING -  * Debugger is active!;
+2026-05-28 16:50:28,287 - INFO -  * Debugger PIN: 349-236-761;

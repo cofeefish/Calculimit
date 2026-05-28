@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="\static\css\home_page.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Calculimit</h1>   
+    </header>
+    <main class="flex" style="margin: 5vw">
+        <form class="input-area" id="input-area" >
+            <span class="input-title">Input Type:
+                <input type="radio" id="python" name="method" value="python" checked>
+                <label for="python">Python</label>
+                <input type="radio" id="latex" name="method" value="latex">
+                <label for="latex">LaTeX</label>
+            </span>
+            <textarea class="input-box" id="input-box" name="expression" placeholder="Enter your expression here..."></textarea>
+            <label for="x-value" class="x-value-label">Point of approach:</label>
+            <input type="text" name="x_value" id="x-value" class="x-value" placeholder="infinity">
+            <label for="num_points" class="test-points-label">number of test points:</label>
+            <span>
+                <input type="range" name="num_points" id="test-points" class="test-points" min="1" max="1000" value="100">
+                <span id="test-points-value" class="test-points-value">100</span>
+            </span>
+            <button type="submit" class="submit-button" id="submit-button">Submit</button>
+        </form>
+        <div class="result-area">
+            {{result}}<br>
+            <button id="show-points-button" class="show-points-button">Show Points</button>
+            <div class="points-area" id="points-area" hidden>
+                {% if points %}
+                <table class="points-table">
+                    <thead>
+                        <tr><th>#</th><th>Point</th></tr>
+                    </thead>
+                    <tbody>
+                    {% for p in points %}
+                        <tr>
+                            <td>{{ loop.index }}</td>
+                            <td>{% for v in p %}{{ v }}{% if not loop.last %}, {% endif %}{% endfor %}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+                {% else %}
+                <p>No points to show.</p>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="graph-area">
+            <data class="graph-data" id="graph-data" hidden data-points="{{points|tojson}}" data-converges="{{converges |safe}}"></data>
+            <canvas class="graph-display" id="graph-display"></canvas>
+        </div>
+    </main>
+</body>
+</html>
+<script src="\static\scripts\graph.js"></script>
+<script>
+    //show points button
+    const showPointsButton = document.getElementById('show-points-button');
+    const pointsArea = document.getElementById('points-area');
+    showPointsButton.addEventListener('click', () => {
+        if (pointsArea.hasAttribute('hidden')) {
+            pointsArea.removeAttribute('hidden');
+            showPointsButton.textContent = "Hide Points";
+        } else {
+            pointsArea.setAttribute('hidden', '');
+            showPointsButton.textContent = "Show Points";
+        }
+    });
+    //test points slider
+    const testPointsSlider = document.getElementById('test-points');
+    const testPointsValue = document.getElementById('test-points-value');
+    testPointsSlider.addEventListener('input', () => {
+        testPointsValue.textContent = testPointsSlider.value;
+    });
+
+</script>
