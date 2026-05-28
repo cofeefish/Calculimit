@@ -28,16 +28,16 @@ def generate_points(func:str, num_points = 10, start=1, dest = Decimal('Infinity
         variations = [Decimal(random.random()/5+.9) for x in range(-num_points, -start)]
         x_vals = [Decimal(math.exp(Decimal(x)*variations[x])) for x in range(-num_points, -start)]
     else:
-        adjusted_start  = math.pow(start, -math.e)
-        adjusted_end    = math.pow(abs(dest-epsilon), -math.e)
+        adjusted_start  = Decimal(math.log(start))
+        adjusted_end    = Decimal(math.log(abs(dest-epsilon)))
         #get linear spacing
         adjusted_range = adjusted_end-adjusted_start
         step = adjusted_range/(num_points//2)
         linear_vals = [adjusted_start]
-        while linear_vals[-1] < adjusted_end:
-            linear_vals.append(linear_vals[-1]+step)
+        while linear_vals[-1] > adjusted_end:
+            linear_vals.append(Decimal(linear_vals[-1]+step))
         #readjust
-        print(adjusted_start, adjusted_end)
+        print(adjusted_start,adjusted_end,linear_vals)
         x_vals = [Decimal(math.exp(val)) for val in linear_vals]
         #add negative half of x_vals
         negative_x_vals = [-1*(val-dest) for val in x_vals]
@@ -89,7 +89,7 @@ def find_limit(func):
         #print(p)
         #print(p_1prime)
 if __name__ == "__main__":
-    generate_points('1/x', num_points = 10, start=1, dest = Decimal(0))
+    generate_points('1/var', num_points = 10, start=1, dest = Decimal(0))
     #find_limit('(var**0.15)')
 
 """
