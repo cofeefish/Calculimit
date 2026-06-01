@@ -3,6 +3,7 @@ this file starts and manages the server
 run with --dev for devmode
 only works on windows
 max howard, 5/28/2026
+start tunnel with  "ngrok http 8080"  ->  https://ounce-thong-bankbook.ngrok-free.dev 
 """
 
 from flask import Flask, request, render_template
@@ -46,7 +47,7 @@ def home_page():
         expression = request_args["expression"].strip().lower()
         if method == "latex":
             expression = compile_tex.tex_to_python(expression)
-        print(f"method={method}, x_val={x_val}, dest={dest}, num_points={num_points}, expression={expression}")
+        #print(f"method={method}, x_val={x_val}, dest={dest}, num_points={num_points}, expression={expression}")
 
         try:
             points, converges, reason = calc.find_limit(expression, num_points, dest=dest)

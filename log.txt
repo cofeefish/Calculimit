@@ -1707,3 +1707,307 @@ jinja2.exceptions.TemplateNotFound: home_page.html
 ----- New Session -----
 2026-05-28 16:50:28,284 - WARNING -  * Debugger is active!;
 2026-05-28 16:50:28,287 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-28 16:50:28,862 - INFO - 127.0.0.1 - - [28/May/2026 16:50:28] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:50:28,983 - INFO - 127.0.0.1 - - [28/May/2026 16:50:28] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:50:29,001 - INFO - 127.0.0.1 - - [28/May/2026 16:50:29] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:50:35,133 - INFO - 127.0.0.1 - - [28/May/2026 16:50:35] "GET /?method=python&expression=var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:50:35,205 - INFO - 127.0.0.1 - - [28/May/2026 16:50:35] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:50:35,222 - INFO - 127.0.0.1 - - [28/May/2026 16:50:35] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:50:38,531 - INFO - 127.0.0.1 - - [28/May/2026 16:50:38] "GET /?method=python&expression=var&x_value=&num_points=360 HTTP/1.1" 200 -;
+2026-05-28 16:50:38,605 - INFO - 127.0.0.1 - - [28/May/2026 16:50:38] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:50:38,629 - INFO - 127.0.0.1 - - [28/May/2026 16:50:38] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:50:44,224 - INFO - 127.0.0.1 - - [28/May/2026 16:50:44] "GET /?method=python&expression=1/var&x_value=&num_points=11 HTTP/1.1" 200 -;
+2026-05-28 16:50:44,297 - INFO - 127.0.0.1 - - [28/May/2026 16:50:44] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:50:44,298 - INFO - 127.0.0.1 - - [28/May/2026 16:50:44] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:50:51,802 - INFO - 127.0.0.1 - - [28/May/2026 16:50:51] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:50:51,892 - INFO - 127.0.0.1 - - [28/May/2026 16:50:51] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:50:51,893 - INFO - 127.0.0.1 - - [28/May/2026 16:50:51] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:51:05,447 - INFO - 127.0.0.1 - - [28/May/2026 16:51:05] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:51:05,516 - INFO - 127.0.0.1 - - [28/May/2026 16:51:05] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:51:05,519 - INFO - 127.0.0.1 - - [28/May/2026 16:51:05] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:51:13,088 - INFO - 127.0.0.1 - - [28/May/2026 16:51:13] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 16:51:13,160 - INFO - 127.0.0.1 - - [28/May/2026 16:51:13] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:51:13,160 - INFO - 127.0.0.1 - - [28/May/2026 16:51:13] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:51:56,969 - INFO - 127.0.0.1 - - [28/May/2026 16:51:56] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 16:51:57,036 - INFO - 127.0.0.1 - - [28/May/2026 16:51:57] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:51:57,037 - INFO - 127.0.0.1 - - [28/May/2026 16:51:57] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:52:15,278 - INFO - 127.0.0.1 - - [28/May/2026 16:52:15] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 16:52:15,345 - INFO - 127.0.0.1 - - [28/May/2026 16:52:15] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:52:15,346 - INFO - 127.0.0.1 - - [28/May/2026 16:52:15] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:52:30,256 - INFO - 127.0.0.1 - - [28/May/2026 16:52:30] "GET /?method=python&expression=math.sin(var)/var&x_value=0&num_points=114 HTTP/1.1" 200 -;
+2026-05-28 16:52:30,330 - INFO - 127.0.0.1 - - [28/May/2026 16:52:30] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:52:30,330 - INFO - 127.0.0.1 - - [28/May/2026 16:52:30] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:52:53,136 - INFO - 127.0.0.1 - - [28/May/2026 16:52:53] "GET /?method=python&expression=1/var&x_value=0&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:52:53,215 - INFO - 127.0.0.1 - - [28/May/2026 16:52:53] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:52:53,216 - INFO - 127.0.0.1 - - [28/May/2026 16:52:53] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:55:27,683 - INFO - 127.0.0.1 - - [28/May/2026 16:55:27] "GET /?method=python&expression=math.cos(var)/var&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 16:55:27,764 - INFO - 127.0.0.1 - - [28/May/2026 16:55:27] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:55:27,764 - INFO - 127.0.0.1 - - [28/May/2026 16:55:27] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 16:55:50,427 - INFO - 127.0.0.1 - - [28/May/2026 16:55:50] "[35m[1mGET /?method=python&expression=math.cos(x)/x&x_value=0&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 16:55:50,504 - INFO - 127.0.0.1 - - [28/May/2026 16:55:50] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -;
+2026-05-28 16:55:50,505 - INFO - 127.0.0.1 - - [28/May/2026 16:55:50] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -;
+2026-05-28 16:55:50,640 - INFO - 127.0.0.1 - - [28/May/2026 16:55:50] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -;
+2026-05-28 16:55:57,545 - INFO - 127.0.0.1 - - [28/May/2026 16:55:57] "GET /?method=python&expression=math.cos(var)/var&x_value=0&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 16:55:57,630 - INFO - 127.0.0.1 - - [28/May/2026 16:55:57] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 16:55:57,632 - INFO - 127.0.0.1 - - [28/May/2026 16:55:57] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 17:00:33,041 - INFO - 127.0.0.1 - - [28/May/2026 17:00:33] "GET /?method=python&expression=math.cos(var)/var&x_value=0&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 17:00:33,118 - INFO - 127.0.0.1 - - [28/May/2026 17:00:33] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:00:33,136 - INFO - 127.0.0.1 - - [28/May/2026 17:00:33] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 17:01:37,293 - INFO - 127.0.0.1 - - [28/May/2026 17:01:37] "GET /?method=python&expression=math.cos(var)/var&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 17:01:37,367 - INFO - 127.0.0.1 - - [28/May/2026 17:01:37] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 17:01:37,373 - INFO - 127.0.0.1 - - [28/May/2026 17:01:37] "GET /static/css/home_page.css HTTP/1.1" 200 -;
+2026-05-28 17:01:39,073 - INFO - 127.0.0.1 - - [28/May/2026 17:01:39] "GET /?method=python&expression=math.cos(var)/var&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 17:01:39,144 - INFO - 127.0.0.1 - - [28/May/2026 17:01:39] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:01:39,144 - INFO - 127.0.0.1 - - [28/May/2026 17:01:39] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 17:01:39,785 - INFO - 127.0.0.1 - - [28/May/2026 17:01:39] "GET /?method=python&expression=math.cos(var)/var&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 17:01:39,853 - INFO - 127.0.0.1 - - [28/May/2026 17:01:39] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 17:01:39,853 - INFO - 127.0.0.1 - - [28/May/2026 17:01:39] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:01:56,788 - INFO - 127.0.0.1 - - [28/May/2026 17:01:56] "GET /?method=python&expression=math.cos(var)/var&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 17:01:56,874 - INFO - 127.0.0.1 - - [28/May/2026 17:01:56] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:01:56,888 - INFO - 127.0.0.1 - - [28/May/2026 17:01:56] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 17:02:03,285 - INFO - 127.0.0.1 - - [28/May/2026 17:02:03] "GET /?method=python&expression=math.cos(var)/var&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 17:02:03,351 - INFO - 127.0.0.1 - - [28/May/2026 17:02:03] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:02:03,376 - INFO - 127.0.0.1 - - [28/May/2026 17:02:03] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 17:02:36,959 - INFO - 127.0.0.1 - - [28/May/2026 17:02:36] "GET /?method=python&expression=math.cos(var)/var&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 17:02:37,029 - INFO - 127.0.0.1 - - [28/May/2026 17:02:37] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:02:37,049 - INFO - 127.0.0.1 - - [28/May/2026 17:02:37] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 17:02:46,252 - INFO - 127.0.0.1 - - [28/May/2026 17:02:46] "GET /?method=python&expression=math.cos(var)/var&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 17:02:46,334 - INFO - 127.0.0.1 - - [28/May/2026 17:02:46] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:02:46,352 - INFO - 127.0.0.1 - - [28/May/2026 17:02:46] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 17:03:42,878 - INFO - 127.0.0.1 - - [28/May/2026 17:03:42] "GET /?method=python&expression=math.cos(var)/var&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 17:03:42,949 - INFO - 127.0.0.1 - - [28/May/2026 17:03:42] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:03:42,969 - INFO - 127.0.0.1 - - [28/May/2026 17:03:42] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 17:04:36,447 - INFO - 127.0.0.1 - - [28/May/2026 17:04:36] "GET /?method=python&expression=math.cos(var)/var&x_value=&num_points=21 HTTP/1.1" 200 -;
+2026-05-28 17:04:36,520 - INFO - 127.0.0.1 - - [28/May/2026 17:04:36] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:04:36,538 - INFO - 127.0.0.1 - - [28/May/2026 17:04:36] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 17:04:46,220 - INFO - 127.0.0.1 - - [28/May/2026 17:04:46] "GET /?method=python&expression=1/var&x_value=0&num_points=61 HTTP/1.1" 200 -;
+2026-05-28 17:04:46,292 - INFO - 127.0.0.1 - - [28/May/2026 17:04:46] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 17:04:46,292 - INFO - 127.0.0.1 - - [28/May/2026 17:04:46] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:05:04,672 - INFO - 127.0.0.1 - - [28/May/2026 17:05:04] "GET /?method=python&expression=math.sin(var)/var&x_value=0&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 17:05:04,754 - INFO - 127.0.0.1 - - [28/May/2026 17:05:04] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:05:04,757 - INFO - 127.0.0.1 - - [28/May/2026 17:05:04] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 17:05:40,807 - INFO - 127.0.0.1 - - [28/May/2026 17:05:40] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 17:05:40,874 - INFO - 127.0.0.1 - - [28/May/2026 17:05:40] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:05:40,892 - INFO - 127.0.0.1 - - [28/May/2026 17:05:40] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 17:06:08,704 - INFO - 127.0.0.1 - - [28/May/2026 17:06:08] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 17:06:08,778 - INFO - 127.0.0.1 - - [28/May/2026 17:06:08] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:06:08,792 - INFO - 127.0.0.1 - - [28/May/2026 17:06:08] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 17:06:19,435 - INFO - 127.0.0.1 - - [28/May/2026 17:06:19] "[35m[1mGET /?method=python&expression=math.log(x)&x_value=&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-28 17:06:19,508 - INFO - 127.0.0.1 - - [28/May/2026 17:06:19] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:06:19,509 - INFO - 127.0.0.1 - - [28/May/2026 17:06:19] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-28 17:06:23,166 - INFO - 127.0.0.1 - - [28/May/2026 17:06:23] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 17:06:23,241 - INFO - 127.0.0.1 - - [28/May/2026 17:06:23] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 17:06:23,259 - INFO - 127.0.0.1 - - [28/May/2026 17:06:23] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:06:43,168 - INFO - 127.0.0.1 - - [28/May/2026 17:06:43] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 17:06:43,261 - INFO - 127.0.0.1 - - [28/May/2026 17:06:43] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:06:43,262 - INFO - 127.0.0.1 - - [28/May/2026 17:06:43] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 17:06:48,891 - INFO - 127.0.0.1 - - [28/May/2026 17:06:48] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 17:06:48,962 - INFO - 127.0.0.1 - - [28/May/2026 17:06:48] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:06:48,999 - INFO - 127.0.0.1 - - [28/May/2026 17:06:48] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 17:08:15,453 - INFO - 127.0.0.1 - - [28/May/2026 17:08:15] "GET /?method=python&expression=math.log(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 17:08:15,548 - INFO - 127.0.0.1 - - [28/May/2026 17:08:15] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:08:15,566 - INFO - 127.0.0.1 - - [28/May/2026 17:08:15] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-28 17:08:22,559 - INFO - 127.0.0.1 - - [28/May/2026 17:08:22] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 17:08:22,632 - INFO - 127.0.0.1 - - [28/May/2026 17:08:22] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:08:22,635 - INFO - 127.0.0.1 - - [28/May/2026 17:08:22] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 17:08:31,044 - INFO - 127.0.0.1 - - [28/May/2026 17:08:31] "GET /?method=python&expression=1/var&x_value=0&num_points=100 HTTP/1.1" 200 -;
+2026-05-28 17:08:31,117 - INFO - 127.0.0.1 - - [28/May/2026 17:08:31] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:08:31,119 - INFO - 127.0.0.1 - - [28/May/2026 17:08:31] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 17:09:05,896 - INFO - 127.0.0.1 - - [28/May/2026 17:09:05] "GET /?method=python&expression=math.sin(var)/var&x_value=0&num_points=54 HTTP/1.1" 200 -;
+2026-05-28 17:09:05,980 - INFO - 127.0.0.1 - - [28/May/2026 17:09:05] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-28 17:09:05,981 - INFO - 127.0.0.1 - - [28/May/2026 17:09:05] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:12:24,453 - INFO - 127.0.0.1 - - [28/May/2026 17:12:24] "GET /?method=python&expression=math.sin(var)/var&x_value=0&num_points=181 HTTP/1.1" 200 -;
+2026-05-28 17:12:24,538 - INFO - 127.0.0.1 - - [28/May/2026 17:12:24] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-28 17:12:24,538 - INFO - 127.0.0.1 - - [28/May/2026 17:12:24] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 07:35:31,401 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-29 07:35:31,438 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-29 07:35:32,377 - WARNING -  * Debugger is active!;
+2026-05-29 07:35:32,380 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-29 07:35:44,454 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-29 07:35:44,478 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-29 07:35:44,704 - WARNING -  * Debugger is active!;
+2026-05-29 07:35:44,708 - INFO -  * Debugger PIN: 349-236-761;
+
+
+----- New Session -----
+2026-05-29 07:36:18,918 - INFO - Serving on http://0.0.0.0:8080;
+
+
+----- New Session -----
+2026-05-29 17:01:53,342 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.67:8080;
+2026-05-29 17:01:53,342 - INFO - [33mPress CTRL+C to quit[0m;
+2026-05-29 17:01:53,348 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-29 17:01:53,571 - WARNING -  * Debugger is active!;
+2026-05-29 17:01:53,574 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-29 17:01:57,716 - INFO - 127.0.0.1 - - [29/May/2026 17:01:57] "[35m[1mGET /?method=python&expression=math.sin(var)/var&x_value=0&num_points=181 HTTP/1.1[0m" 500 -;
+2026-05-29 17:01:57,973 - INFO - 127.0.0.1 - - [29/May/2026 17:01:57] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -;
+2026-05-29 17:01:57,978 - INFO - 127.0.0.1 - - [29/May/2026 17:01:57] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -;
+2026-05-29 17:01:58,370 - INFO - 127.0.0.1 - - [29/May/2026 17:01:58] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -;
+2026-05-29 17:02:11,449 - INFO - 127.0.0.1 - - [29/May/2026 17:02:11] "[35m[1mGET /?method=python&expression=1/var&x_value=0&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-29 17:02:14,664 - INFO - 127.0.0.1 - - [29/May/2026 17:02:14] "GET / HTTP/1.1" 200 -;
+2026-05-29 17:02:14,762 - INFO - 127.0.0.1 - - [29/May/2026 17:02:14] "GET /static/css/home_page.css HTTP/1.1" 200 -;
+2026-05-29 17:02:14,788 - INFO - 127.0.0.1 - - [29/May/2026 17:02:14] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-29 17:02:14,859 - INFO - 127.0.0.1 - - [29/May/2026 17:02:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -;
+2026-05-29 17:02:20,902 - INFO - 127.0.0.1 - - [29/May/2026 17:02:20] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-29 17:02:20,986 - INFO - 127.0.0.1 - - [29/May/2026 17:02:20] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:02:20,990 - INFO - 127.0.0.1 - - [29/May/2026 17:02:20] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:02:32,458 - INFO - 127.0.0.1 - - [29/May/2026 17:02:32] "GET /?method=python&expression=1/var&x_value=-infinity&num_points=100 HTTP/1.1" 200 -;
+2026-05-29 17:02:32,545 - INFO - 127.0.0.1 - - [29/May/2026 17:02:32] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:02:32,545 - INFO - 127.0.0.1 - - [29/May/2026 17:02:32] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:03:21,091 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-29 17:03:21,141 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-29 17:03:21,381 - WARNING -  * Debugger is active!;
+2026-05-29 17:03:21,385 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-29 17:03:22,485 - INFO - 127.0.0.1 - - [29/May/2026 17:03:22] "GET /?method=python&expression=1/var&x_value=-infinity&num_points=100 HTTP/1.1" 200 -;
+2026-05-29 17:03:22,618 - INFO - 127.0.0.1 - - [29/May/2026 17:03:22] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:03:22,625 - INFO - 127.0.0.1 - - [29/May/2026 17:03:22] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:04:11,626 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-29 17:04:11,650 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-29 17:04:11,859 - WARNING -  * Debugger is active!;
+2026-05-29 17:04:11,863 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-29 17:04:20,913 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-29 17:04:20,937 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-29 17:04:21,154 - WARNING -  * Debugger is active!;
+2026-05-29 17:04:21,157 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-29 17:05:09,284 - INFO - 127.0.0.1 - - [29/May/2026 17:05:09] "GET /?method=python&expression=1/var&x_value=&num_points=35 HTTP/1.1" 200 -;
+2026-05-29 17:05:09,524 - INFO - 127.0.0.1 - - [29/May/2026 17:05:09] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:05:09,531 - INFO - 127.0.0.1 - - [29/May/2026 17:05:09] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:05:19,424 - INFO - 127.0.0.1 - - [29/May/2026 17:05:19] "[35m[1mGET /?method=python&expression=1/var&x_value=&num_points=904 HTTP/1.1[0m" 500 -;
+2026-05-29 17:05:19,507 - INFO - 127.0.0.1 - - [29/May/2026 17:05:19] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:05:19,508 - INFO - 127.0.0.1 - - [29/May/2026 17:05:19] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:05:37,629 - INFO - 127.0.0.1 - - [29/May/2026 17:05:37] "GET /?method=python&expression=1/var&x_value=&num_points=634 HTTP/1.1" 200 -;
+2026-05-29 17:05:37,706 - INFO - 127.0.0.1 - - [29/May/2026 17:05:37] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:05:37,754 - INFO - 127.0.0.1 - - [29/May/2026 17:05:37] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:05:55,072 - INFO - 127.0.0.1 - - [29/May/2026 17:05:55] "GET /?method=python&expression=assert+False&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-29 17:05:55,151 - INFO - 127.0.0.1 - - [29/May/2026 17:05:55] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:05:55,152 - INFO - 127.0.0.1 - - [29/May/2026 17:05:55] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:05:58,545 - INFO - 127.0.0.1 - - [29/May/2026 17:05:58] "GET /?method=python&expression=&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-29 17:05:58,624 - INFO - 127.0.0.1 - - [29/May/2026 17:05:58] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:05:58,624 - INFO - 127.0.0.1 - - [29/May/2026 17:05:58] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:06:01,184 - INFO - 127.0.0.1 - - [29/May/2026 17:06:01] "GET /?method=python&expression=var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-29 17:06:01,259 - INFO - 127.0.0.1 - - [29/May/2026 17:06:01] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:06:01,265 - INFO - 127.0.0.1 - - [29/May/2026 17:06:01] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:06:23,244 - INFO - 127.0.0.1 - - [29/May/2026 17:06:23] "GET /?method=python&expression=var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-29 17:06:23,319 - INFO - 127.0.0.1 - - [29/May/2026 17:06:23] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:06:23,323 - INFO - 127.0.0.1 - - [29/May/2026 17:06:23] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:06:29,346 - INFO - 127.0.0.1 - - [29/May/2026 17:06:29] "GET /?method=python&expression=var&x_value=&num_points=12 HTTP/1.1" 200 -;
+2026-05-29 17:06:29,427 - INFO - 127.0.0.1 - - [29/May/2026 17:06:29] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:06:29,427 - INFO - 127.0.0.1 - - [29/May/2026 17:06:29] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:06:37,941 - INFO - 127.0.0.1 - - [29/May/2026 17:06:37] "GET /?method=python&expression=math.sin(var)&x_value=&num_points=12 HTTP/1.1" 200 -;
+2026-05-29 17:06:38,022 - INFO - 127.0.0.1 - - [29/May/2026 17:06:38] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:06:38,027 - INFO - 127.0.0.1 - - [29/May/2026 17:06:38] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:06:59,922 - INFO - 127.0.0.1 - - [29/May/2026 17:06:59] "GET /?method=python&expression=math.cos(var)&x_value=&num_points=225 HTTP/1.1" 200 -;
+2026-05-29 17:07:00,014 - INFO - 127.0.0.1 - - [29/May/2026 17:07:00] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:07:00,032 - INFO - 127.0.0.1 - - [29/May/2026 17:07:00] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:07:23,889 - INFO - 127.0.0.1 - - [29/May/2026 17:07:23] "GET /?method=python&expression=math.sin(var)/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-29 17:07:23,971 - INFO - 127.0.0.1 - - [29/May/2026 17:07:23] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:07:23,975 - INFO - 127.0.0.1 - - [29/May/2026 17:07:23] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:07:36,081 - INFO - 127.0.0.1 - - [29/May/2026 17:07:36] "GET /?method=python&expression=math.sin(var)/math.sqrt(var)&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-29 17:07:36,170 - INFO - 127.0.0.1 - - [29/May/2026 17:07:36] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:07:36,189 - INFO - 127.0.0.1 - - [29/May/2026 17:07:36] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:07:46,000 - INFO - 127.0.0.1 - - [29/May/2026 17:07:46] "GET /?method=python&expression=math.sin(var)/math.sqrt(var)&x_value=&num_points=25 HTTP/1.1" 200 -;
+2026-05-29 17:07:46,087 - INFO - 127.0.0.1 - - [29/May/2026 17:07:46] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:07:46,089 - INFO - 127.0.0.1 - - [29/May/2026 17:07:46] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:07:50,027 - INFO - 127.0.0.1 - - [29/May/2026 17:07:50] "GET /?method=python&expression=math.sin(var)/math.sqrt(var)&x_value=&num_points=5 HTTP/1.1" 200 -;
+2026-05-29 17:07:50,108 - INFO - 127.0.0.1 - - [29/May/2026 17:07:50] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:07:50,127 - INFO - 127.0.0.1 - - [29/May/2026 17:07:50] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:07:55,598 - INFO - 127.0.0.1 - - [29/May/2026 17:07:55] "GET /?method=python&expression=math.sin(var)/math.sqrt(var)&x_value=&num_points=13 HTTP/1.1" 200 -;
+2026-05-29 17:07:55,691 - INFO - 127.0.0.1 - - [29/May/2026 17:07:55] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:07:55,692 - INFO - 127.0.0.1 - - [29/May/2026 17:07:55] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-29 17:09:14,960 - INFO - 127.0.0.1 - - [29/May/2026 17:09:14] "GET /?method=python&expression=math.pow(math.sin(var),+math.cos(var))&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-29 17:09:15,037 - INFO - 127.0.0.1 - - [29/May/2026 17:09:15] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-29 17:09:15,037 - INFO - 127.0.0.1 - - [29/May/2026 17:09:15] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-30 13:35:18,684 - INFO - 127.0.0.1 - - [30/May/2026 13:35:18] "[35m[1mGET /?method=python&expression=1/var&x_value=0&num_points=100 HTTP/1.1[0m" 500 -;
+2026-05-30 13:35:18,783 - INFO - 127.0.0.1 - - [30/May/2026 13:35:18] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -;
+2026-05-30 13:35:18,793 - INFO - 127.0.0.1 - - [30/May/2026 13:35:18] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -;
+2026-05-30 13:35:19,202 - INFO - 127.0.0.1 - - [30/May/2026 13:35:19] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -;
+2026-05-30 13:35:34,924 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-30 13:35:34,952 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-30 13:35:35,885 - WARNING -  * Debugger is active!;
+2026-05-30 13:35:35,889 - INFO -  * Debugger PIN: 349-236-761;
+
+
+----- New Session -----
+2026-05-30 13:36:20,827 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.0.67:8080;
+2026-05-30 13:36:20,827 - INFO - [33mPress CTRL+C to quit[0m;
+2026-05-30 13:36:20,828 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-30 13:36:21,024 - WARNING -  * Debugger is active!;
+2026-05-30 13:36:21,028 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-30 13:36:24,618 - INFO - 127.0.0.1 - - [30/May/2026 13:36:24] "GET /?method=python&expression=1/var&x_value=0&num_points=100 HTTP/1.1" 200 -;
+2026-05-30 13:36:24,864 - INFO - 127.0.0.1 - - [30/May/2026 13:36:24] "GET /static/css/home_page.css HTTP/1.1" 200 -;
+2026-05-30 13:36:24,868 - INFO - 127.0.0.1 - - [30/May/2026 13:36:24] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-30 13:36:24,931 - INFO - 127.0.0.1 - - [30/May/2026 13:36:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -;
+2026-05-30 13:36:28,916 - INFO - 127.0.0.1 - - [30/May/2026 13:36:28] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-30 13:36:28,992 - INFO - 127.0.0.1 - - [30/May/2026 13:36:28] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-30 13:36:28,995 - INFO - 127.0.0.1 - - [30/May/2026 13:36:28] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-30 13:36:34,953 - INFO - 127.0.0.1 - - [30/May/2026 13:36:34] "GET /?method=python&expression=1/var&x_value=0&num_points=14 HTTP/1.1" 200 -;
+2026-05-30 13:36:35,025 - INFO - 127.0.0.1 - - [30/May/2026 13:36:35] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-30 13:36:35,026 - INFO - 127.0.0.1 - - [30/May/2026 13:36:35] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-30 13:37:34,417 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\calc.py', reloading;
+2026-05-30 13:37:34,441 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-30 13:37:34,666 - WARNING -  * Debugger is active!;
+2026-05-30 13:37:34,669 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-30 13:37:35,905 - INFO - 127.0.0.1 - - [30/May/2026 13:37:35] "GET /?method=python&expression=1/var&x_value=0&num_points=14 HTTP/1.1" 200 -;
+2026-05-30 13:37:36,044 - INFO - 127.0.0.1 - - [30/May/2026 13:37:36] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-30 13:37:36,045 - INFO - 127.0.0.1 - - [30/May/2026 13:37:36] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-30 13:37:38,136 - INFO - 127.0.0.1 - - [30/May/2026 13:37:38] "GET /?method=python&expression=1/var&x_value=0&num_points=14 HTTP/1.1" 200 -;
+2026-05-30 13:37:38,211 - INFO - 127.0.0.1 - - [30/May/2026 13:37:38] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-30 13:37:38,212 - INFO - 127.0.0.1 - - [30/May/2026 13:37:38] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-31 12:51:22,214 - INFO -  * Detected change in 'd:\\programming\\calculimit\\scripts\\main.py', reloading;
+2026-05-31 12:51:22,253 - INFO -  * Restarting with stat;
+
+
+----- New Session -----
+2026-05-31 12:51:23,270 - WARNING -  * Debugger is active!;
+2026-05-31 12:51:23,273 - INFO -  * Debugger PIN: 349-236-761;
+2026-05-31 17:02:05,177 - INFO - 127.0.0.1 - - [31/May/2026 17:02:05] "GET / HTTP/1.1" 200 -;
+2026-05-31 17:02:05,324 - INFO - 127.0.0.1 - - [31/May/2026 17:02:05] "GET /static/css/home_page.css HTTP/1.1" 200 -;
+2026-05-31 17:02:05,332 - INFO - 127.0.0.1 - - [31/May/2026 17:02:05] "GET /static/scripts/graph.js HTTP/1.1" 200 -;
+2026-05-31 17:02:05,390 - INFO - 127.0.0.1 - - [31/May/2026 17:02:05] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -;
+2026-05-31 17:02:08,600 - INFO - 127.0.0.1 - - [31/May/2026 17:02:08] "GET /?method=python&expression=1/var&x_value=&num_points=100 HTTP/1.1" 200 -;
+2026-05-31 17:02:08,664 - INFO - 127.0.0.1 - - [31/May/2026 17:02:08] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+2026-05-31 17:02:08,667 - INFO - 127.0.0.1 - - [31/May/2026 17:02:08] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-31 17:02:13,837 - INFO - 127.0.0.1 - - [31/May/2026 17:02:13] "GET /?method=python&expression=1/var&x_value=0&num_points=100 HTTP/1.1" 200 -;
+2026-05-31 17:02:13,894 - INFO - 127.0.0.1 - - [31/May/2026 17:02:13] "[36mGET /static/scripts/graph.js HTTP/1.1[0m" 304 -;
+2026-05-31 17:02:13,894 - INFO - 127.0.0.1 - - [31/May/2026 17:02:13] "[36mGET /static/css/home_page.css HTTP/1.1[0m" 304 -;
+
+
+----- New Session -----
+2026-05-31 20:10:43,708 - INFO - Serving on http://0.0.0.0:8080;
+
+
+----- New Session -----
+2026-05-31 20:10:58,773 - INFO - Serving on http://0.0.0.0:8080;
