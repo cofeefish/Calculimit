@@ -13,10 +13,19 @@ body {
     padding: 0;
 }
 
+main {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
 input[type="range" i] {
     stroke: #ffffff;
     stroke-width: 2px;
     border: 1px solid #ffffff;
+}
+
+i {
+    color: #aaaaaa
 }
 
 .input-area {
@@ -39,4 +48,9 @@ input[type="range" i] {
 .flex {
     display: flex;
     flex-direction: row;
+}
+
+.graph-area {
+    display: flex;
+    flex-direction: column;
 }

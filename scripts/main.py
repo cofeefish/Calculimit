@@ -23,6 +23,13 @@ log_path = f'{source_dir}/log.txt'
 
 app = Flask(__name__, static_folder=f'{source_dir}\\static', template_folder=f'{source_dir}\\templates')
 
+def isfloat(val:str) -> bool:
+    try:
+        float(val)
+        return True
+    except ValueError:
+        return False
+
 @app.route('/')
 def home_page():
     from decimal import Decimal
@@ -30,43 +37,48 @@ def home_page():
 
     result="no input"
     points=[]
-    points_json = ""
+    points_json = "[]"
     converges = False
+    expression = ""
+    dest = Decimal('Infinity')
+    num_samples = 100
     if request_args != {}:
         method = request_args["method"].strip().lower()
         x_val = request_args["x_value"].strip().lower()
-        dest = Decimal('Infinity')
         if x_val == '-infinity':
             dest = Decimal('-Infinity')
-        elif x_val.isdecimal():
+        elif isfloat(x_val):
             dest = Decimal(x_val)
-        num_points = 20
         if "num_points" in request_args and request_args["num_points"].isdecimal():
-            num_points = int(request_args["num_points"])
+            num_samples = int(request_args["num_points"])
 
         expression = request_args["expression"].strip().lower()
         if method == "latex":
             expression = compile_tex.tex_to_python(expression)
-        #print(f"method={method}, x_val={x_val}, dest={dest}, num_points={num_points}, expression={expression}")
+        print(f"method={method}, x_val={x_val}, dest={dest}, num_samples={num_samples}, expression={expression}")
 
         try:
-            points, converges, reason = calc.find_limit(expression, num_points, dest=dest)
+            points, converges, reason = calc.find_limit(expression, num_samples, dest=dest)
         except ValueError as e:
-            result = f"Error: {str(e)}"
+            print(e)
+            result = f"Error: {e}"
             points = []
             converges = False
             reason = ""
         #format result
         if points != []:
-            points = [calc.format_point(p, json=True) for p in points]
+            points = [p.format(json=True) for p in points]
+            # Point.format with json=True returns JSON-serializable values
+            points_json = json.dumps(points)
 
             if converges:
                 result = f'{expression} converges to {points[-1][-1]} \n because {reason}'
             else:
                 result = f'{expression} diverges or converges above {points[-1][-1]}  \n because {reason}'
-        
+        else:
+            points_json = "[]"
 
-    return render_template('home_page.html', result=result, points=points, converges=converges)
+    return render_template('home_page.html',expression=expression, x_value=str(dest), num_samples=num_samples, result=result, points_json=points_json, converges=converges)
 
 @app.route('/restart', methods=['POST'])
 def restart_server():

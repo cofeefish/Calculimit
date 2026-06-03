@@ -7,7 +7,7 @@
     <header>
         <h1 class="title">Calculimit</h1>   
     </header>
-    <main class="flex" style="margin: 5vw">
+    <main class="flex">
         <form class="input-area" id="input-area" >
             <span class="input-title">Input Type:
                 <input type="radio" id="python" name="method" value="python" checked>
@@ -15,13 +15,13 @@
                 <input type="radio" id="latex" name="method" value="latex">
                 <label for="latex">LaTeX</label>
             </span>
-            <textarea class="input-box" id="input-box" name="expression" placeholder="Enter your expression here..."></textarea>
+            <textarea class="input-box" id="input-box" name="expression" placeholder="Enter your expression here...">{{expression}}</textarea>
             <label for="x-value" class="x-value-label">Point of approach:</label>
-            <input type="text" name="x_value" id="x-value" class="x-value" placeholder="infinity">
-            <label for="num_points" class="test-points-label">number of test points:</label>
+            <input type="text" name="x_value" id="x-value" class="x-value" value="{{x_value}}">
+            <label for="num_points" class="test-points-label">number of samples:</label>
             <span>
-                <input type="range" name="num_points" id="test-points" class="test-points" min="5" max="250" value="100">
-                <span id="test-points-value" class="test-points-value">100</span>
+                <input type="range" name="num_points" id="test-points" class="test-points" min="5" max="250" value="{{num_samples}}">
+                <span id="test-points-value" class="test-points-value">{{num_samples}}</span>
             </span>
             <button type="submit" class="submit-button" id="submit-button">Submit</button>
         </form>
@@ -50,9 +50,17 @@
         </div>
 
         <div class="graph-area">
-            <data class="graph-data" id="graph-data" hidden data-points="{{points|tojson}}" data-converges="{{converges |safe}}"></data>
+            <span>
+                <input type="radio" id="graph-linear" name="graph-type" value="linear" checked>
+                <label for="graph-linear">Linear</label>
+                <input type="radio" id="graph-log" name="graph-type" value="log">
+                <label for="graph-log">Logarithmic</label>
+            </span>
+            <data class="graph-data" id="graph-data" hidden data-points='{{points_json | safe}}' data-converges="{{converges |safe}}"></data>
             <canvas class="graph-display" id="graph-display"></canvas>
+            <i>the graph feature isn't done yet</i>
         </div>
+        
     </main>
 </body>
 </html>

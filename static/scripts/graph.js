@@ -2,10 +2,15 @@ const graph_canvas = document.getElementById("graph-display")
 const graph_data = document.getElementById("graph-data")
 const points = JSON.parse(graph_data?.dataset?.points || "[]")
 const converges = (graph_data?.dataset?.converges || "false") === "true"
+const graph_type_radios = document.getElementsByName("graph-type")
+for (const radio of graph_type_radios){
+    radio.addEventListener('change', draw_graph)
+}
 function parseNumberOrInfinity(v){
     if (typeof v === 'string'){
         if (v === 'Infinity') return Infinity
         if (v === '-Infinity') return -Infinity
+        if (v === 'NaN') return NaN
     }
     return Number(v)
 }
@@ -42,20 +47,40 @@ function draw_graph(){
     ctx.strokeStyle = foreground
     ctx.lineWidth = 1
     ctx.stroke()
-    //convert points to log scale
+    //
     let x_values = []
     let y_values = []
-    for (let i = 0; i < points.length; i++){
-        const point = points[i]
-        const x_num = parseNumberOrInfinity(point[0])
-        const y_num = parseNumberOrInfinity(point[1])
-        if (!Number.isFinite(x_num) || !Number.isFinite(y_num)) {
-            console.warn('Skipping invalid point:', point)
-            continue
+    let valid_points_indices = []  // Track original indices of valid points
+    if (graph_type_radios[0].checked) {
+        //convert points to log scale
+        for (let i = 0; i < points.length; i++){
+            const point = points[i]
+            const x_num = parseNumberOrInfinity(point[0])
+            const y_num = parseNumberOrInfinity(point[1])
+            if (!Number.isFinite(x_num) || !Number.isFinite(y_num)) {
+                console.warn('Skipping invalid point:', point)
+                continue
+            }
+            valid_points_indices.push(i)
+            x_values.push(Math.sign(x_num) * Math.log(1 + Math.abs(x_num)));
+            y_values.push(Math.sign(y_num) * Math.log(1 + Math.abs(y_num)));
         }
-        x_values.push(Math.sign(x_num) * Math.log(1 + Math.abs(x_num)));
-        y_values.push(Math.sign(y_num) * Math.log(1 + Math.abs(y_num)));
+    } else {
+        //linear scale
+        for (let i = 0; i < points.length; i++){
+            const point = points[i]
+            const x_num = parseNumberOrInfinity(point[0])
+            const y_num = parseNumberOrInfinity(point[1])
+            if (!Number.isFinite(x_num) || !Number.isFinite(y_num)) {
+                console.warn('Skipping invalid point:', point)
+                continue
+            }
+            valid_points_indices.push(i)
+            x_values.push(x_num);
+            y_values.push(y_num);
+        }
     }
+
     if (x_values.length === 0 || y_values.length === 0) {
         console.warn('No valid points to draw')
         return
@@ -70,9 +95,9 @@ function draw_graph(){
     if (y_range === 0) y_range = 1
     ctx.beginPath();
     const px_coords = []
-    for (let i = 0; i < points.length; i++){
-        let x = x_values[i];
-        let y = y_values[i];
+    for (let valid_idx = 0; valid_idx < x_values.length; valid_idx++){
+        let x = x_values[valid_idx];
+        let y = y_values[valid_idx];
         //scale each point as a percentage of range
         x = (x-x_min)/x_range
         y = (y-y_min)/y_range
@@ -80,17 +105,26 @@ function draw_graph(){
         x = x * graph_canvas.width
         y = (1-y) * graph_canvas.height
         px_coords.push([x,y])
-        if (i == 0){
+        if (valid_idx == 0){
             ctx.moveTo(x,y)
         }
         else{
-            ctx.lineTo(x,y)
+            // Check if there's a discontinuity (NaN point) between this and the last valid point
+            const prev_original_idx = valid_points_indices[valid_idx - 1]
+            const current_original_idx = valid_points_indices[valid_idx]
+            
+            // If there are points skipped between them, there's a discontinuity
+            if (current_original_idx - prev_original_idx > 1) {
+                ctx.stroke()  // Draw the current line segment
+                ctx.beginPath()  // Start a new line segment
+                ctx.moveTo(x, y)
+            } else {
+                ctx.lineTo(x, y)
+            }
         }
     }
-    // draw the line
-    ctx.strokeStyle = foreground
-    ctx.lineWidth = 1 * scale_factor
-    ctx.stroke()
+    ctx.stroke()  // Stroke any remaining path
+
     // draw point markers
     ctx.fillStyle = foreground
     for (let i = 0; i < px_coords.length; i++){

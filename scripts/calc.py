@@ -11,28 +11,52 @@ getcontext().prec = 50
 bound = Decimal(math.exp(getcontext().prec/2-1))
 epsilon = Decimal(math.exp(-getcontext().prec/2+1))
 
-def format_point(point: tuple, precision = 4, x_only=True, json=False):
-    if json: #expect at point to be [x, y] and infinity values a str
-        x = float(point[0])
-        y = float(point[1])
-        if not math.isfinite(x):
-            x = "Infinity" if x > 0 else "-Infinity"
-        else:
-            x = round(x, precision)
-        if not math.isfinite(y):
-            y = "Infinity" if y > 0 else "-Infinity"
-        else:
-            y = round(y, precision)
+class BlacklistError(Exception):
+    """blacklist function called"""
+    pass
+
+class Point:
+    def __init__(self, x: Decimal, y:Decimal):
+        self.x = x
+        self.y = y
+        self.t = (x,y)
+    def __getitem__(self, key):
+        return self.t[key]
+
+    def format(self, precision = 4, y_only=True, json=False):
+        # Convert Decimal to float
+        x = float(self.x)
+        y = float(self.y)
         
-        return [x, y]
+        if json: #return JSON-serializable values
+            # Helper to convert float to JSON-safe value
+            def to_json_value(val):
+                if math.isinf(val):
+                    return "Infinity" if val > 0 else "-Infinity"
+                elif math.isnan(val):
+                    return "NaN"
+                else:
+                    return round(val, precision)
+            x = to_json_value(x)
+            y = to_json_value(y)
+            out = [x, y]
+            return out
+        elif y_only:
+            return str(round(y, precision))
+        else:
+            x = str(round(x, precision))
+            y = str(round(y, precision))
+            return x, y
     
-    if x_only:
-        n = float(point[-1])
-        return str(round(n, precision))
-    x, y = float(point[0]), float(point[1])
-    x = str(round(x, precision))
-    y = str(round(y, precision))
-    return x, y
+    def __repr__(self) -> str:
+        return(str(self.format()))
+
+class Points:
+    '''wrapper for a list of point objects'''
+    def __init__(self, points: list[Point]):
+        self.lst = points
+    def __getitem__(self, key):
+        return self.lst[key]
 
 def sign(num) -> int:
     "returns 1 for positive, -1 for negative, 0 if within +- epsilon"
@@ -40,13 +64,25 @@ def sign(num) -> int:
     elif num < -epsilon: return -1
     return 0
 
-def generate_points(func:str, num_points = 10, start=Decimal(1.0), dest = Decimal('Infinity')):
+
+def sample_function(func:str, num_points = 10, start=Decimal(1), dest = Decimal('Infinity')) -> Points:
+    '''
+    samples a function with exponetial samples
+    acheives this by scaling a linear scale
+    '''
+    def variation(low = 0.9, high = 1.1) -> Decimal:
+        '''generate float between low and high'''
+        total_range = abs(high-low)
+        shift = 1-(total_range/2)
+        base = random.random()
+        return Decimal((base*total_range)+shift)
+
     #check for bad function
     if func == '':
         raise ValueError('function cannot be empty')
     blacklist = ['yield', 'with', 'return', 'quit', 'lambda', 'exit()', 'os.', 'sys.', 'import', 'assert', 'raise', 'break', 'class', 'continue', 'def', 'del', 'dir', 'eval', 'exec', 'for', 'while']
     for ele in blacklist:
-        if ele in func: raise ValueError(f'blacklisted item ({ele}) found in func')
+        if ele in func: raise BlacklistError(f'blacklisted item ({ele}) found in func')
     
     finite_point = False
     if dest == Decimal('Infinity'):
@@ -56,58 +92,58 @@ def generate_points(func:str, num_points = 10, start=Decimal(1.0), dest = Decima
     else:
         finite_point = True
     
-    signs = [1, 1, 1]#start, dest, direction
-    if start < 0:
-        signs[0] = -1
-    if dest < 0:
-        signs[1] = -1
-    if start < dest:
-        signs[2] = -1
-    adjusted_start  = Decimal(math.log(abs(start)))
-    adjusted_end    = Decimal(math.log(abs(dest)-(epsilon*signs[2])))
-
-    #get linear spacing
-    adjusted_range = adjusted_end-adjusted_start
-
+    direction = sign(dest-start)
+    #get x values for sampled points
+    x_values = []
+    #print(start, dest, direction)
     if finite_point:
-        num_points = num_points//2
-        step = abs(adjusted_range/(num_points))
+        for i in range(0, num_points):
+            val = dest + (Decimal(math.exp(-i*variation())) * direction *-1)
+            x_values.append(val)
     else:
-        step = abs(adjusted_range/(num_points))
+        for i in range(0, num_points):
+            val = start + (Decimal(math.exp(i*variation())) * direction)
+            x_values.append(val)
 
-    linear_vals = [adjusted_start]
+    """ old broken method
+    distance = abs(dest-start)
+    assert sign(distance) != 0, ValueError(f'distance between start and destination of sampling is too small')
+    adjusted_start  = Decimal(math.log(epsilon))
+    adjusted_end    = Decimal(math.log(distance-epsilon))
+    adjusted_distance = adjusted_end - adjusted_start
+    
+    delta = max(adjusted_distance/(num_points), 2*epsilon)
+    linear_vals = [Decimal(0)] #these are a displacment from start
     for i in range(1, num_points):
-        linear_vals.append(Decimal(linear_vals[-1]+step))
-    #print(f'range: {adjusted_start},{adjusted_end}  step: {step}  num points = {len(linear_vals)}')
-    #readjust
-    variations = [Decimal(random.random()/5+.9) for x in linear_vals]
-    x_vals = [Decimal(math.exp(Decimal(x)))*variations[i] for i,x in enumerate(linear_vals)]
-    if finite_point:
-        #add other side
-        negative_x_vals = [-1*(val-dest) for val in x_vals]
-        x_vals += negative_x_vals
+        linear_vals.append(Decimal(linear_vals[-1]+delta))
+    #shift to starting position
+    shifted = [x*signs[2] for x in linear_vals]
+    #scale to exponetial scale
+    x_vals = [Decimal(math.exp(x))*variation()+start for x in shifted]
+    """
 
-    functions = [func.replace("var", str(x)) for x in x_vals]
+    functions = [func.replace("var", str(x)) for x in x_values]
     def execute(index: int):
         try:
             y = Decimal(eval(functions[index]))
         except OverflowError:
             y = Decimal('Infinity')
         except ZeroDivisionError:
-            y=0
+            y = Decimal(0)
         return y
-    points = [(x, execute(i)) for i, x in enumerate(x_vals)]
-    return points
+    points = [Point(x, execute(i)) for i, x in enumerate(x_values)]
+    return Points(points)
 
-def find_derivative(points: list) -> list:
+
+def find_derivative(points: list[Point]) -> Points:
     "returns a list of the slope between each point"
     derivative_points = []
     for i, p in enumerate(points):
         if (i + 1) >= len(points): break
-        x1=p[0]
-        y1=p[1]
-        x2=points[i+1][0]
-        y2=points[i+1][1]
+        x1 = p.x
+        y1 = p.y
+        x2 = points[i+1].x
+        y2 = points[i+1].y
         delta_x = x2 - x1
         if delta_x == 0:
             raise ValueError(f"delta_x = 0, derivative can't be found, p0={p}, p1={points[i+1]}")
@@ -115,53 +151,57 @@ def find_derivative(points: list) -> list:
             derivative_points.append((delta_x/2+x1, y2))
             continue
         slope = (y2-y1)/delta_x
-        derivative_points.append((delta_x/2+x1, slope))
-    return derivative_points
+        derivative_points.append(Point(delta_x/2+x1, slope))
+    return Points(derivative_points)
 
-def find_limit(func, points=20,start=Decimal(0+epsilon), dest = Decimal('Infinity'), two_sided=True) -> tuple[list[tuple[Decimal, Decimal]], bool, str]:
+def find_limit(func, points=20, start=Decimal(0+epsilon), dest = Decimal('Infinity'), two_sided=True) -> tuple[Points, bool, str]:
     #takes a finite (two sided) limit by taking both right and left limits
-    #broken currwently because the end behavior is always on the positive end (wehn it should be on the negative )
-    #fix by making oprder of start and dest matter
     finite_point = False
     if math.isfinite(dest) and two_sided:
         #find negative limit
-        negative_limit = find_limit(func, points//2, dest-2, dest, False)
-        positive_limit = find_limit(func, points//2, dest+2, dest, False)
-        combined_ponts = negative_limit[0] + positive_limit[0]
-        both_reasons = negative_limit[2] + ', ' + positive_limit[2]
+        print(dest-2)
+        negative_limit   = find_limit(func, points//2, dest-2, dest, False)
+        positive_limit   = find_limit(func, points//2, dest+2, dest, False)
+        combined_points  = negative_limit[0].lst + [Point(Decimal("NaN"), Decimal("NaN"))] +positive_limit[0].lst #add a point at NaN, NaN between the lists so the graph knows not to draw a line
+        combined_points  = Points(combined_points)
+        both_reasons     = negative_limit[2] + ', ' + positive_limit[2]
         
-        #both derivatives mus converge to the same val
-        if (negative_limit[1] == positive_limit[1]) and (sign(negative_limit[0][-1][1]-positive_limit[0][-1][1])):
-            return (combined_ponts, True, f'both derivatives converge to the same value ({both_reasons})')
+        #both derivatives must converge to the same val
+        if (negative_limit[1] == positive_limit[1]) and (sign(negative_limit[0][-1].y-positive_limit[0][-1].y)==0):
+            return (combined_points, True, f'both derivatives converge to the same value ({both_reasons})')
         else :
-            return (combined_ponts, False, f'')
+            return (combined_points, False, f'')
     else:
-        p        = generate_points(func, points, dest=dest)
-        p_1prime = find_derivative(p)
-        p_2prime = find_derivative(p_1prime)
+        p        = sample_function(func, points, start=start, dest=dest)
+        p_1prime = find_derivative(p.lst)
+        p_2prime = find_derivative(p_1prime.lst)
         #check all points are good 
-        if not all([len(p) == points, len(p_1prime) == points-1, len(p_2prime) == points-2]):
-            raise ValueError(f'incorrect num of points, {len(p), len(p_1prime), len(p_2prime)}')
+        if not all([len(p.lst) == points, len(p_1prime.lst) == points-1, len(p_2prime.lst) == points-2]):
+            raise ValueError(f'incorrect num of points, {len(p.lst), len(p_1prime.lst), len(p_2prime.lst)}')
         #find end behavior
-        p_end = sign(p[-1][1])
-        p_1prime_end = sign(p_1prime[-1][1])
-        p_2prime_end = sign(p_2prime[-1][1])
-        print(abs(p[-1][1]))
+        p_end = sign(p[-1].y)
+        p_1prime_end = sign(p_1prime[-1].y)
+        p_2prime_end = sign(p_2prime[-1].y)
+
+        oscilation = False
 
         if (p_1prime_end != 0) or (p_2prime_end != 0):
             print('func diverges, ')
             return (p, False, 'derivative does not approach 0')
         elif abs(p[-1][1]) > bound:
-            print(f'function likely diverges above {format_point(p[-1])}')
+            print(f'function likely diverges above {p[-1].format()}')
             return (p, False, 'derivative approaches 0 but above bound')
+        elif oscilation:
+            pass
         else:
-            print(f'function converges to {format_point(p[-1])}')
+            print(f'function converges to {p[-1].format()}')
             return (p, True, 'derivative approaches 0 and within bound')
             #print(p)   
             #print(p_1prime)
+        raise NotImplementedError
 
 if __name__ == "__main__":
-    generate_points('1/var', num_points = 10, start=Decimal(1), dest = Decimal(0))
+    sample_function('1/var', num_points = 5, start = Decimal(-1), dest = Decimal(1))
     #find_limit('(var**0.15)')
 
 """    
