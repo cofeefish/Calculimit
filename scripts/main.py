@@ -74,11 +74,11 @@ def home_page():
             if converges:
                 result = f'{expression} converges to {points[-1][-1]} \n because {reason}'
             else:
-                result = f'{expression} diverges or converges above {points[-1][-1]}  \n because {reason}'
+                result = f'{expression} diverges (or converges above {points[-1][-1]})  \n because {reason}'
         else:
             points_json = "[]"
 
-    return render_template('home_page.html',expression=expression, x_value=str(dest), num_samples=num_samples, result=result, points_json=points_json, converges=converges)
+    return render_template('home_page.html',expression=expression, x_value=str(dest), num_samples=num_samples, result=result, points_json=points_json, converges=converges, points=points)
 
 @app.route('/restart', methods=['POST'])
 def restart_server():

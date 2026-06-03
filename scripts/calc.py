@@ -128,12 +128,15 @@ def sample_function(func:str, num_points = 10, start=Decimal(1), dest = Decimal(
             y = Decimal(eval(functions[index]))
         except OverflowError:
             y = Decimal('Infinity')
+            print('overflow error')
         except ZeroDivisionError:
             y = Decimal(0)
+            print('zero div error')
+        except NameError as e:
+            raise ValueError(e, 'try "var"')
         return y
     points = [Point(x, execute(i)) for i, x in enumerate(x_values)]
     return Points(points)
-
 
 def find_derivative(points: list[Point]) -> Points:
     "returns a list of the slope between each point"
@@ -166,11 +169,33 @@ def find_limit(func, points=20, start=Decimal(0+epsilon), dest = Decimal('Infini
         combined_points  = Points(combined_points)
         both_reasons     = negative_limit[2] + ', ' + positive_limit[2]
         
+        converges = False
+        reason = "unknown, no test satisfied"
         #both derivatives must converge to the same val
-        if (negative_limit[1] == positive_limit[1]) and (sign(negative_limit[0][-1].y-positive_limit[0][-1].y)==0):
-            return (combined_points, True, f'both derivatives converge to the same value ({both_reasons})')
-        else :
-            return (combined_points, False, f'')
+        if all([negative_limit[1], positive_limit[1]]):
+            converges = True
+            reason = "both negative and positive limits converge, "
+        else:
+            converges = False
+            if negative_limit[1]:
+                reason = "the negative limit converges while the positive limit does not, "
+            elif positive_limit[1]:
+                reason = "the positive limit converges while the negative limit does not, "
+            else:
+                reason = "neither the positive or negative limits converge, "
+        #they must reach the same value
+        if sign(negative_limit[0][-1].y-positive_limit[0][-1].y)==0:
+            #converges = converges and true does nothing
+            reason += "and both limits approach the same value"
+        else:
+            if converges: reason += "but "
+            else:         reason += "and "
+            converges = False
+            reason += f"the values the limits are different \n(-:{positive_limit[0][-1].format()}   +:{negative_limit[0][-1].format()})"
+
+        reason += f"\n\n (subreasons: {both_reasons})"
+
+        return (combined_points, converges, reason)
     else:
         p        = sample_function(func, points, start=start, dest=dest)
         p_1prime = find_derivative(p.lst)
@@ -183,22 +208,35 @@ def find_limit(func, points=20, start=Decimal(0+epsilon), dest = Decimal('Infini
         p_1prime_end = sign(p_1prime[-1].y)
         p_2prime_end = sign(p_2prime[-1].y)
 
-        oscilation = False
+        converges = False
+        reason = "unknown, no test satisfied"
 
-        if (p_1prime_end != 0) or (p_2prime_end != 0):
-            print('func diverges, ')
-            return (p, False, 'derivative does not approach 0')
+        #check for oscilation
+        oscilation_0 = all([sign(p.y)==0 for p in p[-5:]])
+        oscilation_1 = all([sign(p.y)==0 for p in p_1prime[-5:]])
+        oscilation_2 = all([sign(p.y)==0 for p in p_2prime[-5:]])
+        oscilates = all([(not oscilation_0), (not oscilation_1), (not oscilation_2)])
+        oscilates = False #does not work right now
+        print(oscilation_0, oscilation_1, oscilation_2, oscilates)
+
+        #if end derivatives are non zero -> probably diverges
+        if ((p_1prime_end != 0) or (p_2prime_end != 0)) and (not math.isfinite(dest)):
+            converges = False
+            reason = '1st and second derivatives are non zero'
+            print(p_1prime[-1].y,p_2prime[-1].y)
+        #outside bound
         elif abs(p[-1][1]) > bound:
-            print(f'function likely diverges above {p[-1].format()}')
-            return (p, False, 'derivative approaches 0 but above bound')
-        elif oscilation:
-            pass
+            converges = False
+            reason = f'Derivatives approach 0, but the function is too large >{round(bound,3)}'
+        #if the function appears to oscilate
+        elif oscilates:
+            converges = False
+            reason = f'function appears to oscilate'
         else:
-            print(f'function converges to {p[-1].format()}')
-            return (p, True, 'derivative approaches 0 and within bound')
-            #print(p)   
-            #print(p_1prime)
-        raise NotImplementedError
+            converges = True
+            reason = 'Derivatives approach 0 and the function ends within bounds'
+        
+        return (p, converges, reason)
 
 if __name__ == "__main__":
     sample_function('1/var', num_points = 5, start = Decimal(-1), dest = Decimal(1))
