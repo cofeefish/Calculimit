@@ -87,10 +87,6 @@ def home_page():
 
     return render_template('home_page.html', expression=expression, x_value=str(dest), num_samples=num_samples, result=result, points_json=points_json, converges=converges, points=points)
 
-@app.route('/restart', methods=['POST'])
-def restart_server():
-    return "Server restarted", 200
-
 ###############################################################################
 
 def start_development_server():
