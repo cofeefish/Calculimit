@@ -3,4 +3,4 @@ __pycache__/
 temp/
 env/
 **/#**.py
-/log.txt
+logs/
